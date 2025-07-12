@@ -34,7 +34,7 @@
     "category": "Functions",
     "difficulty": "Medium",
     "problem": "Let $f$ be a real-valued function such that $f(f(x)) = x$ for all real numbers $x$ in the domain of $f$. Which of the following could be the graph of $f$ in the $xy$-plane?",
-    "image": "/src/assets/images/problem6-graphs.svg",
+    "image": "/src/assets/images/problem6-graphs.png",
     "imageAlt": "Five different graph options (A) through (E) showing various mathematical functions plotted on coordinate planes"
   },
   {

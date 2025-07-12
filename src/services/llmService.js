@@ -1,8 +1,13 @@
 // This service handles LLM API calls for generating math solutions
 // Using Perplexity AI API for real solution generation
 
-const PERPLEXITY_API_KEY = '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';
+const PERPLEXITY_API_KEY = import.meta.env.VITE_PERPLEXITY_API_KEY;
 const PERPLEXITY_API_URL = 'https://api.perplexity.ai/chat/completions';
+
+// Check if API key is available
+if (!PERPLEXITY_API_KEY) {
+  console.error('VITE_PERPLEXITY_API_KEY is not set in environment variables');
+}
 
 export const generateSolution = async (problem) => {
   try {
@@ -26,6 +31,10 @@ export const generateHint = async (problem) => {
 
 // Real Perplexity API call
 const callPerplexityAPI = async (problem, type) => {
+  if (!PERPLEXITY_API_KEY) {
+    throw new Error('API key is not configured. Please set VITE_PERPLEXITY_API_KEY in your .env file');
+  }
+
   const systemPrompt = type === 'hint' 
     ? 'You are a helpful math tutor. Provide a brief, encouraging hint to help students solve the problem without giving away the complete solution. Focus on the first step or key concept they should consider. Keep it to 1-2 sentences maximum.'
     : `You are an expert math tutor. Provide clear, comprehensive step-by-step solutions to math problems. 
