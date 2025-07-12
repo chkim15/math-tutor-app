@@ -1,0 +1,99 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="white"/>
+  
+  <!-- Graph A: Exponential-like increasing curve -->
+  <g transform="translate(60, 60)">
+    <text x="60" y="15" font-family="Arial" font-size="14" font-weight="bold">(A)</text>
+    <!-- Axes -->
+    <line x1="0" y1="80" x2="120" y2="80" stroke="black" stroke-width="1"/>
+    <line x1="60" y1="0" x2="60" y2="120" stroke="black" stroke-width="1"/>
+    <!-- Arrow heads -->
+    <polygon points="120,80 115,77 115,83" fill="black"/>
+    <polygon points="60,0 57,5 63,5" fill="black"/>
+    <!-- Exponential-like curve -->
+    <path d="M 10 110 Q 30 90 45 60 Q 55 40 70 20 Q 85 10 110 5" stroke="black" stroke-width="2" fill="none"/>
+    <!-- Origin -->
+    <text x="50" y="95" font-family="Arial" font-size="10">O</text>
+    <!-- Axes labels -->
+    <text x="115" y="90" font-family="Arial" font-size="10">x</text>
+    <text x="45" y="10" font-family="Arial" font-size="10">y</text>
+  </g>
+  
+  <!-- Graph B: Decreasing curve with horizontal asymptotes -->
+  <g transform="translate(220, 60)">
+    <text x="60" y="15" font-family="Arial" font-size="14" font-weight="bold">(B)</text>
+    <!-- Axes -->
+    <line x1="0" y1="80" x2="120" y2="80" stroke="black" stroke-width="1"/>
+    <line x1="60" y1="0" x2="60" y2="120" stroke="black" stroke-width="1"/>
+    <!-- Arrow heads -->
+    <polygon points="120,80 115,77 115,83" fill="black"/>
+    <polygon points="60,0 57,5 63,5" fill="black"/>
+    <!-- Decreasing curve -->
+    <path d="M 10 20 Q 30 35 45 55 Q 55 70 70 85 Q 85 95 110 105" stroke="black" stroke-width="2" fill="none"/>
+    <!-- Origin -->
+    <text x="50" y="95" font-family="Arial" font-size="10">O</text>
+    <!-- Axes labels -->
+    <text x="115" y="90" font-family="Arial" font-size="10">x</text>
+    <text x="45" y="10" font-family="Arial" font-size="10">y</text>
+  </g>
+  
+  <!-- Graph C: Oscillating curve through origin -->
+  <g transform="translate(380, 60)">
+    <text x="60" y="15" font-family="Arial" font-size="14" font-weight="bold">(C)</text>
+    <!-- Axes -->
+    <line x1="0" y1="80" x2="120" y2="80" stroke="black" stroke-width="1"/>
+    <line x1="60" y1="0" x2="60" y2="120" stroke="black" stroke-width="1"/>
+    <!-- Arrow heads -->
+    <polygon points="120,80 115,77 115,83" fill="black"/>
+    <polygon points="60,0 57,5 63,5" fill="black"/>
+    <!-- Oscillating curve -->
+    <path d="M 10 100 Q 25 70 35 60 Q 45 50 60 80 Q 75 110 85 100 Q 95 90 110 20" stroke="black" stroke-width="2" fill="none"/>
+    <!-- Origin -->
+    <text x="50" y="95" font-family="Arial" font-size="10">O</text>
+    <!-- Axes labels -->
+    <text x="115" y="90" font-family="Arial" font-size="10">x</text>
+    <text x="45" y="10" font-family="Arial" font-size="10">y</text>
+  </g>
+  
+  <!-- Graph D: Hyperbola with vertical asymptote -->
+  <g transform="translate(540, 60)">
+    <text x="60" y="15" font-family="Arial" font-size="14" font-weight="bold">(D)</text>
+    <!-- Axes -->
+    <line x1="0" y1="80" x2="120" y2="80" stroke="black" stroke-width="1"/>
+    <line x1="60" y1="0" x2="60" y2="120" stroke="black" stroke-width="1"/>
+    <!-- Arrow heads -->
+    <polygon points="120,80 115,77 115,83" fill="black"/>
+    <polygon points="60,0 57,5 63,5" fill="black"/>
+    <!-- Hyperbola branches -->
+    <path d="M 10 110 Q 20 100 30 90 Q 40 70 50 40 Q 55 20 58 10" stroke="black" stroke-width="2" fill="none"/>
+    <path d="M 62 110 Q 70 100 80 90 Q 90 70 100 40 Q 105 20 110 10" stroke="black" stroke-width="2" fill="none"/>
+    <!-- Origin -->
+    <text x="50" y="95" font-family="Arial" font-size="10">O</text>
+    <!-- Axes labels -->
+    <text x="115" y="90" font-family="Arial" font-size="10">x</text>
+    <text x="45" y="10" font-family="Arial" font-size="10">y</text>
+  </g>
+  
+  <!-- Graph E: Straight line through origin (negative slope) -->
+  <g transform="translate(300, 340)">
+    <text x="60" y="15" font-family="Arial" font-size="14" font-weight="bold">(E)</text>
+    <!-- Axes -->
+    <line x1="0" y1="80" x2="120" y2="80" stroke="black" stroke-width="1"/>
+    <line x1="60" y1="0" x2="60" y2="120" stroke="black" stroke-width="1"/>
+    <!-- Arrow heads -->
+    <polygon points="120,80 115,77 115,83" fill="black"/>
+    <polygon points="60,0 57,5 63,5" fill="black"/>
+    <!-- Straight line with negative slope -->
+    <line x1="10" y1="20" x2="110" y2="110" stroke="black" stroke-width="2"/>
+    <!-- Origin -->
+    <text x="50" y="95" font-family="Arial" font-size="10">O</text>
+    <!-- Axes labels -->
+    <text x="115" y="90" font-family="Arial" font-size="10">x</text>
+    <text x="45" y="10" font-family="Arial" font-size="10">y</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Problem 6: Graph Options</text>
+  <text x="400" y="50" font-family="Arial" font-size="12" text-anchor="middle">Which could be the graph of f where f(f(x)) = x?</text>
+</svg> 

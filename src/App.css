@@ -1,0 +1,15 @@
+/* Global App Styles */
+.App {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
