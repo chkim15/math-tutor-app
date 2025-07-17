@@ -30,7 +30,14 @@ const MathProblem = () => {
     // Step 2: Handle \[ ... \] LaTeX display math delimiters  
     processedText = processedText.replace(/\\\[/g, '$').replace(/\\\]/g, '$');
     
-    // Step 3: Only process text that doesn't already have $ delimiters properly
+    // Step 3: Convert double dollar signs to single dollar signs
+    processedText = processedText.replace(/\$\$/g, '$');
+    
+    // Step 4: Clean up malformed LaTeX commands that appear outside of dollar signs
+    processedText = processedText.replace(/\\int\s+(\d+)\^{([^}]+)}\s+dx/g, '$\\int $1^{$2} dx$');
+    processedText = processedText.replace(/\\int\s+(\d+)\^{([^}]+)}\s*\\cdot\s*\\frac{([^}]+)}{([^}]+)}/g, '$\\int $1^{$2} \\cdot \\frac{$3}{$4}$');
+    
+    // Step 5: Handle common math expressions that aren't wrapped
     if (!processedText.includes('$')) {
       // This is likely LLM-generated content that needs LaTeX conversion
       processedText = processedText
@@ -62,7 +69,7 @@ const MathProblem = () => {
         .replace(/\$\s*\$/g, ' ');
     }
 
-    // Step 4: Split by $ delimiters and render
+    // Step 6: Split by $ delimiters and render
     const parts = processedText.split(/(\$[^$]*\$)/);
     
     return parts.map((part, index) => {
@@ -169,62 +176,69 @@ const MathProblem = () => {
   const formatSolution = (solutionText) => {
     if (!solutionText) return null;
 
-    // Split by double line breaks for paragraphs
-    const paragraphs = solutionText.split('\n\n');
+    // Split by line breaks and process each line
+    const lines = solutionText.split('\n').filter(line => line.trim() !== '');
     
-    return paragraphs.map((paragraph, paragraphIndex) => {
-      const lines = paragraph.split('\n').filter(line => line.trim() !== '');
+    return lines.map((line, lineIndex) => {
+      const trimmedLine = line.trim();
       
-      return (
-        <div key={paragraphIndex} className="solution-paragraph">
-          {lines.map((line, lineIndex) => {
-            const trimmedLine = line.trim();
-            
-            // Handle different types of content
-            if (trimmedLine.startsWith('**') && trimmedLine.endsWith('**')) {
-              // Bold headings
-              return <h4 key={lineIndex} className="solution-heading">{trimmedLine.slice(2, -2)}</h4>;
-            }
-            
-            if (trimmedLine.startsWith('*') && trimmedLine.endsWith('*') && !trimmedLine.startsWith('**')) {
-              // Italic emphasis
-              return <em key={lineIndex} className="solution-emphasis">{trimmedLine.slice(1, -1)}</em>;
-            }
-            
-            if (trimmedLine.match(/^(Step \d+|Solution:|Answer:|Therefore,|Thus,|Hence,|Final Answer:)/i)) {
-              // Step headers and conclusions
-              return <h5 key={lineIndex} className="solution-step-header">{renderMathText(trimmedLine)}</h5>;
-            }
-            
-            if (trimmedLine.startsWith('- ') || trimmedLine.match(/^\d+\./)) {
-              // List items
-              return <li key={lineIndex} className="solution-list-item">{renderMathText(trimmedLine.replace(/^[-\d.]\s*/, ''))}</li>;
-            }
-            
-            if (trimmedLine.match(/^[A-Z]\)|^\([A-Z]\)/)) {
-              // Multiple choice options
-              return <div key={lineIndex} className="solution-choice">{renderMathText(trimmedLine)}</div>;
-            }
-            
-            // Check if line contains mostly mathematical expressions
-            const mathContentRatio = (trimmedLine.match(/[\$\\∫∑π√≤≥≠±∞∂]/g) || []).length / trimmedLine.length;
-            if (mathContentRatio > 0.1 || trimmedLine.includes('=') || trimmedLine.match(/\b\d+\.\d+|\b\d+\/\d+/)) {
-              // Mathematical expressions
-              return <div key={lineIndex} className="solution-math-line">{renderMathText(trimmedLine)}</div>;
-            }
-            
-            // Regular text
-            return <p key={lineIndex} className="solution-text">{renderMathText(trimmedLine)}</p>;
-          })}
-        </div>
-      );
-    });
+      // Skip empty lines
+      if (!trimmedLine) return null;
+      
+      // Skip redundant "Solution:" headers since we already have one in the container
+      if (trimmedLine.match(/^(##\s*)?Solution:\s*$/i)) {
+        return null; // Skip this line entirely
+      }
+      
+      // Handle ### headers first (more specific)
+      if (trimmedLine.startsWith('###')) {
+        const headerText = trimmedLine.replace(/^###\s*/, '');
+        return <div key={lineIndex} className="solution-subheading"><strong>{renderMathText(headerText)}</strong></div>;
+      }
+      
+      // Handle ## headers (but skip Solution: as we handle it above)
+      if (trimmedLine.startsWith('##')) {
+        const headerText = trimmedLine.replace(/^##\s*/, '');
+        return <div key={lineIndex} className="solution-heading"><strong>{renderMathText(headerText)}</strong></div>;
+      }
+      
+      // Handle **text** bold formatting
+      if (trimmedLine.startsWith('**') && trimmedLine.endsWith('**') && trimmedLine.length > 4) {
+        const headerText = trimmedLine.slice(2, -2);
+        return <div key={lineIndex} className="solution-heading"><strong>{renderMathText(headerText)}</strong></div>;
+      }
+      
+      // Handle *text* italic formatting (single asterisk)
+      if (trimmedLine.startsWith('*') && trimmedLine.endsWith('*') && !trimmedLine.startsWith('**') && trimmedLine.length > 2) {
+        const emphasisText = trimmedLine.slice(1, -1);
+        return <div key={lineIndex} className="solution-emphasis"><em>{renderMathText(emphasisText)}</em></div>;
+      }
+      
+      // Handle step headers and important sections - make this more specific
+      if (trimmedLine.match(/^(Step \d+:|Answer:|Final Answer:|Therefore,|Thus,|Hence,)/i)) {
+        return <div key={lineIndex} className="solution-step-header"><strong>{renderMathText(trimmedLine)}</strong></div>;
+      }
+      
+      // Handle list items
+      if (trimmedLine.startsWith('- ') || trimmedLine.match(/^\d+\.\s/)) {
+        const listText = trimmedLine.replace(/^[-\d.]\s*/, '');
+        return <div key={lineIndex} className="solution-list-item">{renderMathText(listText)}</div>;
+      }
+      
+      // Handle multiple choice options
+      if (trimmedLine.match(/^[A-E]\)|^\([A-E]\)/)) {
+        return <div key={lineIndex} className="solution-choice">{renderMathText(trimmedLine)}</div>;
+      }
+      
+      // All other text - render as regular text with NO containers
+      return <div key={lineIndex} className="solution-text">{renderMathText(trimmedLine)}</div>;
+    }).filter(Boolean);
   };
 
   return (
     <div className="math-problem-container">
       <div className="header">
-        <h1>Math Tutor</h1>
+        <h1>Math Problems</h1>
         <p>Practice math problems with AI-powered solutions</p>
       </div>
 
