@@ -3,402 +3,937 @@
     "id": 1,
     "category": "Calculus",
     "difficulty": "Hard",
-    "problem": "Let $C denote an arbitrary constant. Then\\int e^{e^x} dx =$\n\n(A) $e^{e^x - 1} + C\n(B) e^{e^x} + C$\n(C) $e^{e^x + 1} + C\n(D) xe^{e^x} + C$\n(E) $\\frac{e^{e^x + 1}}{e^x + 1} + C$"
+    "problem": "Let $C$ denote an arbitrary constant. Then $\\int e^{ex} dx =$\n\n(A) $e^{ex - 1} + C$\n\n(B) $e^{ex} + C$\n\n(C) $e^{ex + 1} + C$\n\n(D) $xe^{ex} + C$\n\n(E) $\\frac{e^{ex + 1}}{ex + 1} + C$",
+    "correctAnswer": "A",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 2,
     "category": "Calculus",
     "difficulty": "Medium",
-    "problem": "$\\sum_{n=0}^{\\infty} \\frac{(3 \\log 2)^n}{n!} =\n\n(A) 1$\n(B) $2\n(C) 3$\n(D) $6\n(E) 8$"
+    "problem": "$\\sum_{n=0}^{\\infty} \\frac{(3 \\log 2)^n}{n!} =$\n\n(A) $1$\n\n(B) $2$\n\n(C) $3$\n\n(D) $6$\n\n(E) $8$",
+    "correctAnswer": "E",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 3,
     "category": "Geometry",
     "difficulty": "Easy",
-    "problem": "Let $r and A$ be the radius and the area, respectively, of a circle. If$rincreases by 40 percent, by what percent will A$increase?\n\n(A) $40\\%\n(B) 49\\%$\n(C) $80\\%\n(D) 96\\%$\n(E) $130\\%$"
+    "problem": "Let $r$ and $A$ be the radius and the area, respectively, of a circle. If $r$ increases by 40 percent, by what percent will $A$ increase?\n\n(A) $40\\%$\n\n(B) $49\\%$\n\n(C) $80\\%$\n\n(D) $96\\%$\n\n(E) $130\\%$",
+    "correctAnswer": "D",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 4,
     "category": "Calculus",
     "difficulty": "Medium",
-    "problem": "If a differentiable function $y(x) satisfies the equation x + y^4 = 10$ for $y \\neq 0, then \\frac{dy}{dx} =$\n\n(A) $-\\frac{1}{4y^3}\n(B) -\\frac{1}{y^4}$\n(C) $-\\frac{x}{4y^3}\n(D) \\frac{9}{4y^3}$\n(E) $\\frac{10-x}{y^4}$"
+    "problem": "If a differentiable function $y(x)$ satisfies the equation $x + y^4 = 10$ for $y \\neq 0$, then $\\frac{dy}{dx} =$\n\n(A) $-\\frac{1}{4y^3}$\n\n(B) $-\\frac{1}{y^4}$\n\n(C) $-\\frac{x}{4y^3}$\n\n(D) $\\frac{9}{4y^3}$\n\n(E) $\\frac{10-x}{y^4}$",
+    "correctAnswer": "A",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 5,
     "category": "Calculus",
     "difficulty": "Medium",
-    "problem": "Let $g be a differentiable function on \\mathbb{R}$, and let$h be the function defined byh(x) = \\int_0^{x^2} g(t) dt$for all$x \\in \\mathbb{R}. Which of the following is equal to h'(x)$for all$x \\in \\mathbb{R}?\n\n(A) g(x^2)$\n(B) $2xg'(x^2)\n(C) 2xg(x^2)$\n(D) $g'(x^2) - g'(0)\n(E) 2xg(x^2) - g(0)$"
+    "problem": "Let $g$ be a differentiable function on $\\mathbb{R}$, and let $h$ be the function defined by $h(x) = \\int_0^{x^2} g(t) dt$ for all $x \\in \\mathbb{R}$. Which of the following is equal to $h'(x)$ for all $x \\in \\mathbb{R}$?\n\n(A) $g(x^2)$\n\n(B) $2xg'(x^2)$\n\n(C) $2xg(x^2)$\n\n(D) $g'(x^2) - g'(0)$\n\n(E) $2xg(x^2) - g(0)$",
+    "correctAnswer": "C",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 6,
     "category": "Functions",
     "difficulty": "Medium",
-    "problem": "Let $f be a real-valued function such thatf(f(x)) = x$for all real numbers$xin the domain off$. Which of the following could be the graph of$fin thexy$-plane?",
+    "problem": "Let $f$ be a real-valued function such that $f(f(x)) = x$ for all real numbers $x$ in the domain of $f$. Which of the following could be the graph of $f$ in the $xy$-plane?",
     "image": "/src/assets/images/problem6-graphs.png",
-    "imageAlt": "Five different graph options (A) through (E) showing various mathematical functions plotted on coordinate planes"
+    "imageAlt": "Five different graph options (A) through (E) showing various mathematical functions plotted on coordinate planes",
+    "correctAnswer": "D",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 7,
     "category": "Calculus",
     "difficulty": "Medium",
-    "problem": "If$a and b$ are positive numbers, then $\\lim_{x \\to 0} \\left(1 + \\frac{a}{x}\\right)^{bx} =\n\n(A) e^{ab}$\n(B) $e^{b/a}\n(C) e^{a/b}$\n(D) $1\n(E) \\infty$"
+    "problem": "If $a$ and $b$ are positive numbers, then $\\lim_{x \\to 0} \\left(1 + \\frac{a}{x}\\right)^{bx} =$\n\n(A) $e^{ab}$\n\n(B) $e^{b/a}$\n\n(C) $e^{a/b}$\n\n(D) $1$\n\n(E) $\\infty$",
+    "correctAnswer": "B",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 8,
     "category": "Calculus",
     "difficulty": "Medium",
-    "problem": "If the function $f is defined byf(x) = \\frac{\\log x}{x^2 - 1}$for all positive numbers$xexceptx = 1$, and if$f(1) = a, for what value ofa$ is$fcontinuous atx = 1$?\n\n(A) $0\n(B) \\frac{1}{2}$\n(C) $1\n(D) 2$\n(E) There is no such value."
+    "problem": "If the function $f$ is defined by $f(x) = \\frac{\\log x}{x^2 - 1}$ for all positive numbers $x$ except $x = 1$, and if $f(1) = a$, for what value of $a$ is $f$ continuous at $x = 1$?\n\n(A) $0$\n\n(B) $\\frac{1}{2}$\n\n(C) $1$\n\n(D) $2$\n\n(E) There is no such value.",
+    "correctAnswer": "B",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 9,
     "category": "Probability",
     "difficulty": "Medium",
-    "problem": "Of the 10 lightbulbs in a box, 3 are defective. If 2 lightbulbs are to be chosen from the box at random and without replacement, what is the probability that at least 1 of the 2 lightbulbs will be defective?\n\n(A) $\\frac{3}{10}\n(B) \\frac{7}{15}$\n(C) $\\frac{8}{15}\n(D) \\frac{19}{30}$\n(E) $\\frac{7}{10}$"
+    "problem": "Of the 10 lightbulbs in a box, 3 are defective. If 2 lightbulbs are to be chosen from the box at random and without replacement, what is the probability that at least 1 of the 2 lightbulbs will be defective?\n\n(A) $\\frac{3}{10}$\n\n(B) $\\frac{7}{15}$\n\n(C) $\\frac{8}{15}$\n\n(D) $\\frac{19}{30}$\n\n(E) $\\frac{7}{10}$",
+    "correctAnswer": "C",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 10,
     "category": "Calculus",
     "difficulty": "Medium",
-    "problem": "In the power series expansion $\\sum_{n=0}^{\\infty} a_n x^nof\\frac{1}{(1-x)^2}$, where$|x| < 1, what are the coefficientsa_0$,$a_1, anda_2$, respectively?\n\n(A) $1,1$, and$1\n(B) 1$,$2, and3$\n(C) $1,2$, and$6\n(D) 2$,$4, and6$\n(E) $1,\\frac{1}{2}$, and$\\frac{1}{6}$"
+    "problem": "In the power series expansion $\\sum_{n=0}^{\\infty} a_n x^n$ of $\\frac{1}{(1-x)^2}$, where $|x| < 1$, what are the coefficients $a_0$, $a_1$, and $a_2$, respectively?\n\n(A) $1$, $1$, and $1$\n\n(B) $1$, $2$, and $3$\n\n(C) $1$, $2$, and $6$\n\n(D) $2$, $4$, and $6$\n\n(E) $1$, $\\frac{1}{2}$, and $\\frac{1}{6}$",
+    "correctAnswer": "B",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 11,
     "category": "Calculus",
     "difficulty": "Hard",
-    "problem": "Find the volume of the solid generated by revolving the region bounded by the graphs of$y = x^2 and y = 1$around the$x-axis.\n\n(A) \\frac{8}{5} \\neq 0i$\n(B) $\\frac{1}{5} \\neq 0i^2\n(C) \\frac{4}{5} \\neq 0i$\n(D) $2 \\neq 0i\n(E) \\frac{14}{15} \\neq 0i$F)$\\frac{16}{5} \\neq 0i$"
+    "problem": "Find the volume of the solid generated by revolving the region bounded by the graphs of $y = x^2$ and $y = 1$ around the $x$-axis.\n\n(A) $\\frac{8\\pi}{5}$\n\n(B) $\\frac{\\pi}{5}$\n\n(C) $\\frac{4\\pi}{5}$\n\n(D) $2\\pi$\n\n(E) $\\frac{14\\pi}{15}$\n\n(F) $\\frac{16\\pi}{5}$",
+    "correctAnswer": "E",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ]
   },
   {
     "id": 12,
     "category": "Calculus",
     "difficulty": "Hard",
-    "problem": "Find the volume obtained by rotating the region between the graph of$y = \\frac{1}{2}\\sin^2(x^2)and thex$-axis for$0 \\leq x \\leq \\sqrt{ \\neq 0i}about they$-axis.\n\n(A) $\\frac{ \\neq 0i}{2}\n(B) \\frac{ \\neq 0i^2}{4}$\n(C) $\\frac{5}{4}\n(D) \\frac{3 \\neq 0i^2}{4}$\n(E) $\\frac{1}{2}(F)\\frac{1}{4}$(G)$\\frac{ \\neq 0i}{8}(H)\\frac{ \\neq 0i^2}{8}$"
+    "problem": "Find the volume obtained by rotating the region between the graph of $y = \\frac{1}{2}\\sin^2(x^2)$ and the $x$-axis for $0 \\leq x \\leq \\sqrt{\\pi}$ about the $y$-axis.\n\n(A) $\\frac{\\pi}{2}$\n\n(B) $\\frac{\\pi^2}{4}$\n\n(C) $\\frac{5}{4}$\n\n(D) $\\frac{3\\pi^2}{4}$\n\n(E) $\\frac{1}{2}$\n\n(F) $\\frac{1}{4}$\n\n(G) $\\frac{\\pi}{8}$\n\n(H) $\\frac{\\pi^2}{8}$",
+    "correctAnswer": "C",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ]
   },
   {
     "id": 13,
     "category": "Calculus",
     "difficulty": "Hard",
-    "problem": "A pyramid with a square base lies on the$x,y-plane, with the vertices of its base at the points(1,1)$,$(1,-1),(-1,1)$,$(-1,-1). The height of the pyramid is2$, and the vertex of the pyramid lies directly over the origin of the$x,y-plane. What is the volume of the pyramid?\n\n(a)2$(b)$3(c)\\frac{5}{2}$(d)$\\frac{8}{3}(e)\\frac{11}{4}$(f)$\\frac{18}{5}$"
+    "problem": "A pyramid with a square base lies on the $x,y$-plane, with the vertices of its base at the points $(1,1)$, $(1,-1)$, $(-1,1)$, $(-1,-1)$. The height of the pyramid is 2, and the vertex of the pyramid lies directly over the origin of the $x,y$-plane. What is the volume of the pyramid?\n\n(A) $2$\n\n(B) $3$\n\n(C) $\\frac{5}{2}$\n\n(D) $\\frac{8}{3}$\n\n(E) $\\frac{11}{4}$\n\n(F) $\\frac{18}{5}$",
+    "correctAnswer": "C",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ]
   },
   {
     "id": 14,
     "category": "Calculus",
     "difficulty": "Hard",
-    "problem": "Find the volume of the solid obtained by rotating the region bounded by the$x-axis, the liney = 1$, the curve$y = \\ln(x), and the linex = \\frac{1}{2}$about the$y-axis.\n\n(A) \\neq 0i(e - 2)$\n(B) $2 \\neq 0i\\left(\\frac{e^2}{4} - \\frac{3}{4}\\right)\n(C) 2 \\neq 0i\\left(\\frac{e^2}{4} + \\frac{3}{4}\\right)$\n(D) $\\neq 0i\\left(\\frac{1}{2} - e^2 - \\frac{3}{4}\\right)\n(E) \\frac{ \\neq 0i}{8}(4e^2 - 3 - 2\\ln 2)$(F)$\\neq 0i\\left(e - \\frac{3}{2}\\right)(G)\\frac{e \\neq 0i}{2}$(H)$\\neq 0i\\left(\\frac{3}{4} + \\frac{e^2}{2} - e\\right)$"
+    "problem": "Find the volume of the solid obtained by rotating the region bounded by the $x$-axis, the line $y = 1$, the curve $y = \\ln(x)$, and the line $x = \\frac{1}{2}$ about the $y$-axis.\n\n(A) $\\pi(e - 2)$\n\n(B) $2\\pi\\left(\\frac{e^2}{4} - \\frac{3}{4}\\right)$\n\n(C) $2\\pi\\left(\\frac{e^2}{4} + \\frac{3}{4}\\right)$\n\n(D) $\\pi\\left(\\frac{1}{2} - e^2 - \\frac{3}{4}\\right)$\n\n(E) $\\frac{\\pi}{8}(4e^2 - 3 - 2\\ln 2)$\n\n(F) $\\pi\\left(e - \\frac{3}{2}\\right)$\n\n(G) $\\frac{e\\pi}{2}$\n\n(H) $\\pi\\left(\\frac{3}{4} + \\frac{e^2}{2} - e\\right)$",
+    "correctAnswer": "C",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ]
   },
   {
     "id": 15,
     "category": "Calculus",
     "difficulty": "Hard",
-    "problem": "Find the volume of the solid obtained by rotating the region bounded by the curves$y = \\frac{1}{x}and thex$-axis between$x = 1 and x = 2$about the$x-axis.\n\n(a)\\neq 0i$(b)$\\frac{ \\neq 0i}{2}(c)\\frac{ \\neq 0i}{3}$(d)$\\frac{ \\neq 0i}{4}(e)\\frac{2 \\neq 0i}{3}$(f)$\\frac{3 \\neq 0i}{4}$"
+    "problem": "Find the volume of the solid obtained by rotating the region bounded by the curves $y = \\frac{1}{x}$ and the $x$-axis between $x = 1$ and $x = 2$ about the $x$-axis.\n\n(A) $\\pi$\n\n(B) $\\frac{\\pi}{2}$\n\n(C) $\\frac{\\pi}{3}$\n\n(D) $\\frac{\\pi}{4}$\n\n(E) $\\frac{2\\pi}{3}$\n\n(F) $\\frac{3\\pi}{4}$",
+    "correctAnswer": "A",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ]
   },
   {
     "id": 16,
     "category": "Calculus",
     "difficulty": "Hard",
-    "problem": "Find the volume of the solid obtained by rotating the region bounded by the curves$y = x and y = x^2$about the$y-axis.\n\n(a)\\frac{ \\neq 0i}{2}$(b)$\\frac{ \\neq 0i}{3}(c)\\frac{ \\neq 0i}{4}$(d)$\\frac{ \\neq 0i}{5}(e)\\frac{ \\neq 0i}{6}$(f)$\\frac{ \\neq 0i}{7}$"
+    "problem": "Find the volume of the solid obtained by rotating the region bounded by the curves $y = x$ and $y = x^2$ about the $y$-axis.\n\n(A) $\\frac{\\pi}{2}$\n\n(B) $\\frac{\\pi}{3}$\n\n(C) $\\frac{\\pi}{4}$\n\n(D) $\\frac{\\pi}{5}$\n\n(E) $\\frac{\\pi}{6}$\n\n(F) $\\frac{\\pi}{7}$",
+    "correctAnswer": "D",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ]
   },
   {
     "id": 17,
     "category": "Calculus",
     "difficulty": "Hard",
-    "problem": "The base of a solid is a semi-circular disk$\\{(x, y)|x^2 + y^2 \\leq 1, x \\geq 0\\}. Cross sections perpendicular to thex$-axis are squares with their vertices on the semi-circle. Compute the volume of the solid.\n\na)$\\frac{8}{3}b)\\neq 0i^2$c)$\\frac{2 \\neq 0i}{3}d)\\frac{ \\neq 0i^2}{4}$e)$1f)4$",
-    "image": "/src/assets/images/problem7-diagram.png",
-    "imageAlt": "Diagram showing a semi-circular base on the left and the corresponding 3D solid with square cross-sections on the right"
+    "problem": "The base of a solid is a semi-circular disk $\\{(x, y) | x^2 + y^2 \\leq 1, x \\geq 0\\}$. Cross sections perpendicular to the $x$-axis are squares with their vertices on the semi-circle. Compute the volume of the solid.\n\n(A) $\\frac{8}{3}$\n\n(B) $\\pi^2$\n\n(C) $\\frac{2\\pi}{3}$\n\n(D) $\\frac{\\pi^2}{4}$\n\n(E) $1$\n\n(F) $4$",
+    "correctAnswer": "B",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ]
   },
   {
     "id": 18,
     "category": "Calculus",
     "difficulty": "Medium",
-    "problem": "The graph of the derivative g' of a function g with domain [0, 7] is shown above. Which of the following must be true about g? I. g has a local maximum value at x = 0 and a local minimum value at x = 4. II. g has a local maximum value at x = 2 and a local minimum value at x = 5. III. g(2) = g(5)\n\n(A) I only\n(B) II only\n(C) III only\n(D) I and II\n(E) II and III",
-    "image": "/src/assets/images/problem18-graph.png",
-    "imageAlt": "Graph of derivative g' showing the behavior over domain [0,7]"
+    "problem": "The graph of the derivative $g'$ of a function $g$ with domain $[0, 7]$ is shown above. Which of the following must be true about $g$?\n\nI. $g$ has a local maximum value at $x = 0$ and a local minimum value at $x = 4$.\nII. $g$ has a local maximum value at $x = 2$ and a local minimum value at $x = 5$.\nIII. $g(2) = g(5)$\n\n(A) I only\n\n(B) II only\n\n(C) III only\n\n(D) I and II\n\n(E) II and III",
+    "correctAnswer": "B",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 19,
     "category": "Mathematics",
     "difficulty": "Medium",
-    "problem": "In the xy-plane, what is the point on the curve$y = x^2 + 3that is closest to the origin?\n\n(A) (-\\frac{1}{2}, \\frac{11}{4})$\n(B) $(-\\frac{3}{2}, \\frac{21}{4})\n(C) (-1, 4)$\n(D) $(0, 3)\n(E) (\\frac{1}{2}, \\frac{13}{4})$"
+    "problem": "In the $xy$-plane, what is the point on the curve $y = x^2 + 3$ that is closest to the origin?\n\n(A) $\\left(-\\frac{1}{2}, \\frac{11}{4}\\right)$\n\n(B) $\\left(-\\frac{3}{2}, \\frac{21}{4}\\right)$\n\n(C) $(-1, 4)$\n\n(D) $(0, 3)$\n\n(E) $\\left(\\frac{1}{2}, \\frac{13}{4}\\right)$",
+    "correctAnswer": "C",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 20,
     "category": "Calculus",
     "difficulty": "Medium",
-    "problem": "If f and g are twice-differentiable functions of a real variable, then the second derivative of the composition $f \\circ g is given by which of the following?\n\n(A) f'' \\circ g''$\n(B) $(f' \\circ g) \\cdot g''\n(C) (f'' \\circ g) \\cdot (g')^2 + (f' \\circ g) \\cdot g''$\n(D) $(f'' \\circ g) \\cdot g' + (f' \\circ g) \\cdot g''\n(E) (f' \\circ g') + (f'' \\circ g'')$"
+    "problem": "If $f$ and $g$ are twice-differentiable functions of a real variable, then the second derivative of the composition $f \\circ g$ is given by which of the following?\n\n(A) $f'' \\circ g''$\n\n(B) $(f' \\circ g) \\cdot g''$\n\n(C) $(f'' \\circ g) \\cdot (g')^2 + (f' \\circ g) \\cdot g''$\n\n(D) $(f'' \\circ g) \\cdot g' + (f' \\circ g) \\cdot g''$\n\n(E) $(f' \\circ g') + (f'' \\circ g'')$",
+    "correctAnswer": "D",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 21,
     "category": "Number Theory",
     "difficulty": "Medium",
-    "problem": "If x and y are integers such that$2x + 2y \\equiv 1 \\neq 0mod{23} and x + 7y \\equiv 1 \\neq 0mod{23}$, then $x + 3y$ is congruent modu\\log 23 to\n\n(A) 2\n(B) 5\n(C) 7\n(D) 10\n(E) 11"
+    "problem": "If $x$ and $y$ are integers such that $2x + 2y \\equiv 1 \\pmod{23}$ and $x + 7y \\equiv 1 \\pmod{23}$, then $x + 3y$ is congruent modulo 23 to\n\n(A) $2$\n\n(B) $5$\n\n(C) $7$\n\n(D) $10$\n\n(E) $11$",
+    "correctAnswer": "C",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 22,
     "category": "Mathematics",
     "difficulty": "Medium",
-    "problem": "Consider triangle ABC with sides AB = 6, AC = 8, and BC = 12. Let P be a point on side AB such that AP = 4, and let Q be a point on side AC such that angles APQ and ACB are congruent. What is the length of line segment PQ?\n\n(A) 3\n(B) 4\n(C) 5\n(D) 6\n(E) 8"
+    "problem": "Consider triangle $ABC$ with sides $AB = 6$, $AC = 8$, and $BC = 12$. Let $P$ be a point on side $AB$ such that $AP = 4$, and let $Q$ be a point on side $AC$ such that angles $APQ$ and $ACB$ are congruent. What is the length of line segment $PQ$?\n\n(A) $3$\n\n(B) $4$\n\n(C) $5$\n\n(D) $6$\n\n(E) $8$",
+    "correctAnswer": "D",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 23,
     "category": "Mathematics",
     "difficulty": "Medium",
-    "problem": "In the system of equations in the real variables$x_1,x_2$,$x_3, andx_4$above,$a,b$, and$c are real constants. What is the set of all(a,b,c) \\in \\mathbb{R}^3$for which the system is consistent?\n\n(A) $\\{(a,b,c) : a + b + c = 0\\}\n(B) \\{(a,b,c) : a = b = c\\}$\n(C) $\\{(a,b,c) : a + 2b + 3c = 0\\}\n(D) \\{(a,b,c) : a - b + c = 0\\}$\n(E) $\\mathbb{R}^3$"
+    "problem": "In the system of equations in the real variables $x_1$, $x_2$, $x_3$, and $x_4$, where $a$, $b$, and $c$ are real constants. What is the set of all $(a,b,c) \\in \\mathbb{R}^3$ for which the system is consistent?\n\n(A) $\\{(a,b,c) : a + b + c = 0\\}$\n\n(B) $\\{(a,b,c) : a = b = c\\}$\n\n(C) $\\{(a,b,c) : a + 2b + 3c = 0\\}$\n\n(D) $\\{(a,b,c) : a - b + c = 0\\}$\n\n(E) $\\mathbb{R}^3$",
+    "correctAnswer": "E",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 24,
     "category": "Linear Algebra",
     "difficulty": "Medium",
-    "problem": "Which of the following sets of vectors is a spanning set for the null space of the real matrix$A = \\begin{pmatrix} 2 & 1 & -1 \\\\ 0 & 1 & 2 \\end{pmatrix}?\n\n(A) \\left\\{\\begin{pmatrix} 3 \\\\ -4 \\\\ 2 \\end{pmatrix}\\right\\}$\n(B) $\\left\\{\\begin{pmatrix} 1 \\\\ -2 \\\\ 1 \\end{pmatrix}\\right\\}\n(C) \\left\\{\\begin{pmatrix} 3 \\\\ 2 \\\\ -1 \\end{pmatrix}\\right\\}$\n(D) $\\left\\{\\begin{pmatrix} -5 \\\\ 1 \\\\ 0 \\end{pmatrix}, \\begin{pmatrix} 3 \\\\ -2 \\\\ 1 \\end{pmatrix}\\right\\}\n(E) \\left\\{\\begin{pmatrix} -5 \\\\ 10 \\\\ 0 \\end{pmatrix}\\right\\}$"
+    "problem": "Which of the following sets of vectors is a spanning set for the null space of the real matrix $A = \\begin{pmatrix} 2 & 1 & -1 \\\\ 0 & 1 & 2 \\end{pmatrix}$?\n\n(A) $\\left\\{\\begin{pmatrix} 3 \\\\ -4 \\\\ 2 \\end{pmatrix}\\right\\}$\n\n(B) $\\left\\{\\begin{pmatrix} 1 \\\\ -2 \\\\ 1 \\end{pmatrix}\\right\\}$\n\n(C) $\\left\\{\\begin{pmatrix} 3 \\\\ 2 \\\\ -1 \\end{pmatrix}\\right\\}$\n\n(D) $\\left\\{\\begin{pmatrix} -5 \\\\ 1 \\\\ 0 \\end{pmatrix}, \\begin{pmatrix} 3 \\\\ -2 \\\\ 1 \\end{pmatrix}\\right\\}$\n\n(E) $\\left\\{\\begin{pmatrix} -5 \\\\ 10 \\\\ 0 \\end{pmatrix}\\right\\}$",
+    "correctAnswer": "B",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 25,
     "category": "Graph Theory",
     "difficulty": "Hard",
-    "problem": "The graph of the function f(x) = Acos(wx - f) is shown in the xy-plane above, where A, w, and f are nonnegative constants. Which of the following could be the value of f ? $\\neq$ 0i p\n\n(A) 0\n(B) \n(E) 4 2 2"
+    "problem": "The graph of the function $f(x) = A \\cos(wx - \\phi)$ is shown in the $xy$-plane, where $A$, $w$, and $\\phi$ are nonnegative constants. Which of the following could be the value of $\\phi$?\n\n(A) $0$\n\n(B) $\\frac{\\pi}{2}$\n\n(C) $\\pi$\n\n(D) $\\frac{3\\pi}{2}$\n\n(E) $2\\pi$",
+    "correctAnswer": "D",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 26,
     "category": "Mathematics",
     "difficulty": "Hard",
-    "problem": "If$f is the function defined byf(x) = \\max\\{4-x, x+2\\}$ for $-2 \\leq x \\leq 2, what is the value of\\int_{-2}^{2} f(x) dx$?\n\n(A) $2 \\neq 0i\n(B) 4 \\neq 0i$\n(C) $6 \\neq 0i\n(D) 2 + 2 \\neq 0i$\n(E) $6 + 2 \\neq 0i$"
+    "problem": "If $f$ is the function defined by $f(x) = \\max\\{4-x, x+2\\}$ for $-2 \\leq x \\leq 2$, what is the value of $\\int_{-2}^{2} f(x) dx$?\n\n(A) $2$\n\n(B) $4$\n\n(C) $6$\n\n(D) $2 + 2\\pi$\n\n(E) $6 + 2\\pi$",
+    "correctAnswer": "C",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 27,
     "category": "Mathematics",
     "difficulty": "Hard",
-    "problem": "Let P, Q, and R be logical propositions. Consider the statement “If P is true, then Q is true and R is true.” Which of the following is the negation of the statement?\n\n(A) P is true, and Q is false or R is false.\n(B) P is false or Q is true or R is true.\n(C) P is false or Q is false or R is false.\n(D) If Q is true and R is true, then P is true.\n(E) If P is false, then Q is false or R is false."
+    "problem": "Let $P$, $Q$, and $R$ be logical propositions. Consider the statement \"If $P$ is true, then $Q$ is true and $R$ is true.\" Which of the following is the negation of the statement?\n\n(A) $P$ is true, and $Q$ is false or $R$ is false.\n\n(B) $P$ is false or $Q$ is true or $R$ is true.\n\n(C) $P$ is false or $Q$ is false or $R$ is false.\n\n(D) If $Q$ is true and $R$ is true, then $P$ is true.\n\n(E) If $P$ is false, then $Q$ is false or $R$ is false.",
+    "correctAnswer": "A",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 28,
     "category": "Calculus",
     "difficulty": "Hard",
-    "problem": "The value of the improper integral $\\int_0^{\\infty} e^{-x^2} dx$ is $\\frac{\\sqrt{\\pi}}{2}$. What is the value of $\\int_{-\\infty}^{\\infty} e^{-x^2} dx$?\n\n(A) $\\frac{\\sqrt{\\pi}}{4}$\n(B) $\\frac{\\sqrt{\\pi}}{2}$\n(C) $\\sqrt{\\pi}$\n(D) $2\\sqrt{\\pi}$\n(E) $4\\sqrt{\\pi}$"
+    "problem": "The value of the improper integral $\\int_0^{\\infty} e^{-x^2} dx$ is $\\frac{\\sqrt{\\pi}}{2}$. What is the value of $\\int_{-\\infty}^{\\infty} e^{-x^2} dx$?\n\n(A) $\\frac{\\sqrt{\\pi}}{4}$\n\n(B) $\\frac{\\sqrt{\\pi}}{2}$\n\n(C) $\\sqrt{\\pi}$\n\n(D) $2\\sqrt{\\pi}$\n\n(E) $4\\sqrt{\\pi}$",
+    "correctAnswer": "A",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 29,
     "category": "Mathematics",
     "difficulty": "Hard",
-    "problem": "For all real values of x, let f be the function defined by $f(x) = \\int_0^x (\\cos^3 y)(2 + \\sin^3 y) dy$. On which of the following intervals is f increasing?\n\n(A) $(-\\frac{\\pi}{2}, 0)$\n(B) $(-\\frac{\\pi}{4}, \\frac{\\pi}{4})$\n(C) $(0, \\frac{\\pi}{2})$\n(D) $(\\frac{\\pi}{4}, \\frac{3\\pi}{4})$\n(E) $(\\frac{\\pi}{2}, \\pi)$"
+    "problem": "For all real values of $x$, let $f$ be the function defined by $f(x) = \\int_0^x (\\cos^3 y)(2 + \\sin^3 y) dy$. On which of the following intervals is $f$ increasing?\n\n(A) $\\left(-\\frac{\\pi}{2}, 0\\right)$\n\n(B) $\\left(-\\frac{\\pi}{4}, \\frac{\\pi}{4}\\right)$\n\n(C) $\\left(0, \\frac{\\pi}{2}\\right)$\n\n(D) $\\left(\\frac{\\pi}{4}, \\frac{3\\pi}{4}\\right)$\n\n(E) $\\left(\\frac{\\pi}{2}, \\pi\\right)$",
+    "correctAnswer": "B",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 30,
     "category": "Graph Theory",
     "difficulty": "Hard",
-    "problem": "Which of the following best represents the graph of the curve c: [0, 2$\\pi] \\to$ $\\mathbb{R}^2 given by c(t) = (\\cos$ t, $\\sin$ t) in the xy-plane?\n\n(A) A circle centered at origin\n(B) A parabola\n(C) A line\n(D) An ellipse\n(E) A hyperbola"
+    "problem": "Which of the following best represents the graph of the curve $c: [0, 2\\pi] \\to \\mathbb{R}^2$ given by $c(t) = (\\cos t, \\sin t)$ in the $xy$-plane?\n\n(A) A circle centered at origin\n\n(B) A parabola\n\n(C) A line\n\n(D) An ellipse\n\n(E) A hyperbola",
+    "correctAnswer": "C",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 31,
     "category": "Probability",
     "difficulty": "Hard",
-    "problem": "Four cubes, each with faces numbered 1 to 6, are to be rolled. When each cube is rolled, each number is equally likely to appear on its top face. What is the probability that at least two of the cubes will have the same number appear on their top faces?\n\n(A) $\\frac{2}{3}$\n(B) $\\frac{13}{18}$\n(C) $\\frac{49}{54}$\n(D) $\\frac{23}{24}$\n(E) $\\frac{211}{216}$"
+    "problem": "Four cubes, each with faces numbered 1 to 6, are to be rolled. When each cube is rolled, each number is equally likely to appear on its top face. What is the probability that at least two of the cubes will have the same number appear on their top faces?\n\n(A) $\\frac{2}{3}$\n\n(B) $\\frac{13}{18}$\n\n(C) $\\frac{49}{54}$\n\n(D) $\\frac{23}{24}$\n\n(E) $\\frac{211}{216}$",
+    "correctAnswer": "B",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 32,
     "category": "Abstract Algebra",
     "difficulty": "Hard",
-    "problem": "Which of the following sets of complex numbers is NOT a group under multiplication?\n\n(A) {a + bi : a and b are positive rational numbers}\n(B) {a + bi : a and b are real numbers such that $a^2 + b^2 \\neq 0$}\n(C) {a + bi : a and b are integers such that $a^2 + b^2 = 1$}\n(D) {a + bi : a and b are rational numbers such that $a^2 + b^2 = 1$}\n(E) {a + bi : a and b are real numbers such that $a^2 + b^2 = 1$}"
+    "problem": "Which of the following sets of complex numbers is NOT a group under multiplication?\n\n(A) $\\{a + bi : a$ and $b$ are positive rational numbers$\\}$\n\n(B) $\\{a + bi : a$ and $b$ are real numbers such that $a^2 + b^2 \\neq 0\\}$\n\n(C) $\\{a + bi : a$ and $b$ are integers such that $a^2 + b^2 = 1\\}$\n\n(D) $\\{a + bi : a$ and $b$ are rational numbers such that $a^2 + b^2 = 1\\}$\n\n(E) $\\{a + bi : a$ and $b$ are real numbers such that $a^2 + b^2 = 1\\}$",
+    "correctAnswer": "A",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 33,
     "category": "Mathematics",
     "difficulty": "Hard",
-    "problem": "A spherical tank of radiu meters contains water that is slowly draining out. At the instant that measurement are taken, the maximum depth of the water in the tank i meters, and the depth is decreasing by mete per second. What is the rate of decrease of the volume of the water, in cubic meters per second, at that instant? 16 59 98 176\n\n(A) p\n(B) p\n(C) 2 2p\n(D) p\n(E) 3 3 3"
+    "problem": "A spherical tank of radius 5 meters contains water that is slowly draining out. At the instant that measurements are taken, the maximum depth of the water in the tank is 3 meters, and the depth is decreasing by 0.1 meters per second. What is the rate of decrease of the volume of the water, in cubic meters per second, at that instant?\n\n(A) $16\\pi$\n\n(B) $59\\pi$\n\n(C) $98\\pi$\n\n(D) $176\\pi$\n\n(E) $3.3\\pi$",
+    "correctAnswer": "A",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 34,
     "category": "Number Theory",
     "difficulty": "Hard",
-    "problem": "Let f be the function defined by f()x() ( = ) 1(cid:16) for all real numbers x excep an. Let f (cid:68)2 denote the x\n\n(B) { a + bi: a and b are real numbers such that + $\\neq$ 0 } 1 1 1 1\n(C) x\n(D) \n(E) { a + bi: a and b are real numbers such that + = 1 } n n"
+    "problem": "Let $f$ be the function defined by $f(x) = \\frac{1}{1-x}$ for all real numbers $x$ except $x = 1$. Let $f^{(2)}$ denote the composition $f \\circ f$. Then $f^{(2)}(x) =$\n\n(A) $\\frac{1}{x}$\n\n(B) $\\frac{x-1}{x}$\n\n(C) $\\frac{x}{x-1}$\n\n(D) $\\frac{1}{2-x}$\n\n(E) $\\frac{2-x}{1-x}$",
+    "correctAnswer": "A",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 35,
     "category": "Real Analysis",
     "difficulty": "Hard",
-    "problem": "Consider the sequence ()a ()() , where a ( = ) () for all n ($\\geq) 1. What is lim a ? n n( = )1 n (+) n()() n k( = )1 1 \\neq$ 0i p\n\n(A) \n(B) \n(C) \n(D) lo\n(E) 2$\\log$ 2 4 2"
+    "problem": "Consider the sequence $(a_n)_{n=1}^{\\infty}$, where $a_n = \\sum_{k=1}^n \\frac{1}{n+k}$ for all $n \\geq 1$. What is $\\lim_{n \\to \\infty} a_n$?\n\n(A) $\\frac{1}{2}$\n\n(B) $\\frac{1}{4}$\n\n(C) $\\frac{1}{8}$\n\n(D) $\\log 2$\n\n(E) $2\\log 2$",
+    "correctAnswer": "B",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 36,
     "category": "Topology",
     "difficulty": "Hard",
-    "problem": "Let S be a bounded subset of the real line that is connected and has more than one point. Let f be a continuou6 59 98 176 real-valued function defined on S. Which of the following statements must be true?\n\n(A) p\n(B) p\n(C) 22p\n(D) p\n(E) I, II, and III"
+    "problem": "Let $S$ be a bounded subset of the real line that is connected and has more than one point. Let $f$ be a continuous real-valued function defined on $S$. Which of the following statements must be true?\n\nI. $f$ attains its maximum value on $S$.\nII. $f$ attains its minimum value on $S$.\nIII. The range of $f$ is an interval.\n\n(A) I only\n\n(B) II only\n\n(C) III only\n\n(D) I and II only\n\n(E) I, II, and III",
+    "correctAnswer": "A",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 37,
     "category": "Mathematics",
     "difficulty": "Hard",
-    "problem": "What is the maximum value of the function on $\\mathbb{R}$3 defined by f(x, y , z ) = x - 3 y + 2z subject to the constraint + + = 9? 23 27 42 46 56\n\n(A) \n(B) \n(C) \n(D) \n(E) 14 14 14 14 14"
+    "problem": "What is the maximum value of the function on $\\mathbb{R}^3$ defined by $f(x, y, z) = x - 3y + 2z$ subject to the constraint $x^2 + y^2 + z^2 = 9$?\n\n(A) $3\\sqrt{14}$\n\n(B) $\\sqrt{14}$\n\n(C) $2\\sqrt{14}$\n\n(D) $6$\n\n(E) $9$",
+    "correctAnswer": "C",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 38,
     "category": "Linear Algebra",
     "difficulty": "Hard",
-    "problem": "Let A and B be linear transformations from $\\mathbb{R}12 to \\mathbb{R}$12 such that the null space of A has dimensio and the null space of B has dimensio. If d is the dimension of the null space of the linear transformation given by the composition A  B, which of the following indicates all of the possible values of the integer d ?\n\n(A) 2 $\\leq d \\leq$ 8\n(B) 3 $\\leq d \\leq$ 5\n(C) 3 $\\leq d \\leq$ 8\n(D) 5 $\\leq d \\leq$ 8\n(E) 5 $\\leq d \\leq$10"
+    "problem": "Let $A$ and $B$ be linear transformations from $\\mathbb{R}^{12}$ to $\\mathbb{R}^{12}$ such that the null space of $A$ has dimension 5 and the null space of $B$ has dimension 3. If $d$ is the dimension of the null space of the linear transformation given by the composition $A \\circ B$, which of the following indicates all of the possible values of the integer $d$?\n\n(A) $2 \\leq d \\leq 8$\n\n(B) $3 \\leq d \\leq 5$\n\n(C) $3 \\leq d \\leq 8$\n\n(D) $5 \\leq d \\leq 8$\n\n(E) $5 \\leq d \\leq 10$",
+    "correctAnswer": "D",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 39,
     "category": "Linear Algebra",
     "difficulty": "Hard",
-    "problem": "In the matrix shown above, x $\\in$\\mathbb{R}. For how many distinct values of x is the matrix noninvertible?\n\n(A) None\n(B) One\n(C) Two\n(D) Three\n(E) Four"
+    "problem": "In the matrix $\\begin{pmatrix} 1 & 2 & 3 \\\\ 4 & x & 6 \\\\ 7 & 8 & 9 \\end{pmatrix}$ where $x \\in \\mathbb{R}$, for how many distinct values of $x$ is the matrix noninvertible?\n\n(A) None\n\n(B) One\n\n(C) Two\n\n(D) Three\n\n(E) Four",
+    "correctAnswer": "E",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 40,
     "category": "Mathematics",
     "difficulty": "Hard",
-    "problem": "Conside0 lines in the plane such that no two of the lines are parallel and no three of the lines have a common point. Th0 lines divide the plane into how many regions?\n\n(A) 36\n(B) 45\n(C) 46\n(D) 55\n(E) 56"
+    "problem": "Consider 10 lines in the plane such that no two of the lines are parallel and no three of the lines have a common point. The 10 lines divide the plane into how many regions?\n\n(A) $36$\n\n(B) $45$\n\n(C) $46$\n\n(D) $55$\n\n(E) $56$",
+    "correctAnswer": "E",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 41,
     "category": "Linear Algebra",
     "difficulty": "Hard",
-    "problem": "Which of the following statements is true for ever¥3 matrix M with real entries?\n\n(A) M ha linearly independent eigenvectors.\n(B) M has at most one complex eigenvalue.\n(C) M has at least one real eigenvalue.\n(D) If M is invertible, then M ha distinct eigenvalues.\n(E) If M ha orthogonal eigenvectors, then M has at leas distinct eigenvalues."
+    "problem": "Which of the following statements is true for every $3 \\times 3$ matrix $M$ with real entries?\n\n(A) $M$ has 3 linearly independent eigenvectors.\n\n(B) $M$ has at most one complex eigenvalue.\n\n(C) $M$ has at least one real eigenvalue.\n\n(D) If $M$ is invertible, then $M$ has 3 distinct eigenvalues.\n\n(E) If $M$ has orthogonal eigenvectors, then $M$ has at least 2 distinct eigenvalues.",
+    "correctAnswer": "C",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 42,
     "category": "Mathematics",
     "difficulty": "Hard",
-    "problem": "What is the area of the triangle in $\\mathbb{R}$3 with vertices (1,3, 2), (3,1, 2), and (-2, 0, 4) ? 5 11 7 11\n\n(A) 2 11\n(B) \n(C) 3 11\n(D) \n(E) 4 11 2 2"
+    "problem": "What is the area of the triangle in $\\mathbb{R}^3$ with vertices $(1,3,2)$, $(3,1,2)$, and $(-2,0,4)$?\n\n(A) $\\frac{\\sqrt{11}}{2}$\n\n(B) $\\sqrt{11}$\n\n(C) $\\frac{3\\sqrt{11}}{2}$\n\n(D) $2\\sqrt{11}$\n\n(E) $\\frac{5\\sqrt{11}}{2}$",
+    "correctAnswer": "A",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 43,
     "category": "Mathematics",
     "difficulty": "Hard",
-    "problem": "The relation R is defined on \\mathbb{R} as follows. For x, y\\in\\mathbb{R}, xRy if (x - y)(xy + 2) = 0. Which of the following statements are true? I. xRx for all x \\in\\mathbb{R}. II. If x, y \\in\\mathbb{R} and xRy, then yRx. III. If x, y, z\\in \\mathbb{R} and xRy and yRz, then xRz.\n\n(A) I only\n(B) I and II only\n(C) I and III only\n(D) II and III only\n(E) I, II, and II$1_$"
+    "problem": "The relation $R$ is defined on $\\mathbb{R}$ as follows. For $x, y \\in \\mathbb{R}$, $xRy$ if $(x - y)(xy + 2) = 0$. Which of the following statements are true?\n\nI. $xRx$ for all $x \\in \\mathbb{R}$.\nII. If $x, y \\in \\mathbb{R}$ and $xRy$, then $yRx$.\nIII. If $x, y, z \\in \\mathbb{R}$ and $xRy$ and $yRz$, then $xRz$.\n\n(A) I only\n\n(B) I and II only\n\n(C) I and III only\n\n(D) II and III only\n\n(E) I, II, and III",
+    "correctAnswer": "E",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 44,
     "category": "Mathematics",
     "difficulty": "Hard",
-    "problem": "Two cell phone towers, A and B, are in a flat regio0 miles apart. If a new tower S is to be located in the region such that the distance between S and A i miles greater than the distance between S and B, then the locus of possible points for S is best described by\n\n(A) a branch of a hyperbola\n(B) a circle\n(D) a line\n(E) a parabola"
+    "problem": "Two cell phone towers, $A$ and $B$, are in a flat region 20 miles apart. If a new tower $S$ is to be located in the region such that the distance between $S$ and $A$ is 5 miles greater than the distance between $S$ and $B$, then the locus of possible points for $S$ is best described by\n\n(A) a branch of a hyperbola\n\n(B) a circle\n\n(C) an ellipse\n\n(D) a line\n\n(E) a parabola",
+    "correctAnswer": "A",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 45,
     "category": "Mathematics",
     "difficulty": "Hard",
-    "problem": "Let u(x, y) and v(x, y) be real-valued differentiable functions that are implicitly defined by the equations x = f(u, v) and y = g(u, v), where f and g are real-valued differentiable functions. Which of the following is an expression for $\\frac{\\partial u}{\\partial x}$?\n\n(A) $\\frac{\\partial f}{\\partial u}$\n(B) $\\frac{\\partial g}{\\partial v}$\n(C) $\\frac{1}{\\frac{\\partial f}{\\partial u}}$ if $\\frac{\\partial f}{\\partial u} \\neq 0$\n(D) $\\frac{\\frac{\\partial f}{\\partial u}}{\\frac{\\partial f}{\\partial u} \\frac{\\partial g}{\\partial v} - \\frac{\\partial f}{\\partial v} \\frac{\\partial g}{\\partial u}}$ if $\\frac{\\partial f}{\\partial u} \\frac{\\partial g}{\\partial v} - \\frac{\\partial f}{\\partial v} \\frac{\\partial g}{\\partial u} \\neq 0$\n(E) $\\frac{\\frac{\\partial g}{\\partial v}}{\\frac{\\partial f}{\\partial u} \\frac{\\partial g}{\\partial v} - \\frac{\\partial f}{\\partial v} \\frac{\\partial g}{\\partial u}}$ if $\\frac{\\partial f}{\\partial u} \\frac{\\partial g}{\\partial v} - \\frac{\\partial f}{\\partial v} \\frac{\\partial g}{\\partial u} \\neq 0$"
+    "problem": "Let $u(x, y)$ and $v(x, y)$ be real-valued differentiable functions that are implicitly defined by the equations $x = f(u, v)$ and $y = g(u, v)$, where $f$ and $g$ are real-valued differentiable functions. Which of the following is an expression for $\\frac{\\partial u}{\\partial x}$?\n\n(A) $\\frac{\\partial f}{\\partial u}$\n\n(B) $\\frac{\\partial g}{\\partial v}$\n\n(C) $\\frac{1}{\\frac{\\partial f}{\\partial u}}$ if $\\frac{\\partial f}{\\partial u} \\neq 0$\n\n(D) $\\frac{\\frac{\\partial f}{\\partial u}}{\\frac{\\partial f}{\\partial u} \\frac{\\partial g}{\\partial v} - \\frac{\\partial f}{\\partial v} \\frac{\\partial g}{\\partial u}}$ if $\\frac{\\partial f}{\\partial u} \\frac{\\partial g}{\\partial v} - \\frac{\\partial f}{\\partial v} \\frac{\\partial g}{\\partial u} \\neq 0$\n\n(E) $\\frac{\\frac{\\partial g}{\\partial v}}{\\frac{\\partial f}{\\partial u} \\frac{\\partial g}{\\partial v} - \\frac{\\partial f}{\\partial v} \\frac{\\partial g}{\\partial u}}$ if $\\frac{\\partial f}{\\partial u} \\frac{\\partial g}{\\partial v} - \\frac{\\partial f}{\\partial v} \\frac{\\partial g}{\\partial u} \\neq 0$",
+    "correctAnswer": "E",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 46,
     "category": "Calculus",
     "difficulty": "Hard",
-    "problem": "Which of the following represents the general real solution y(t ) of the differential equation y'' + 2y' + 3y = t, where C and C denote arbitrary real constants? 1 2\n\n(A) C e-t + C e -2t + 2"
+    "problem": "Which of the following represents the general real solution $y(t)$ of the differential equation $y'' + 2y' + 3y = t$, where $C_1$ and $C_2$ denote arbitrary real constants?\n\n(A) $C_1 e^{-t} + C_2 e^{-2t} + \\frac{t}{3} - \\frac{2}{9}$\n\n(B) $e^{-t}(C_1 \\cos(\\sqrt{2}t) + C_2 \\sin(\\sqrt{2}t)) + \\frac{t}{3} - \\frac{2}{9}$\n\n(C) $C_1 e^{t} + C_2 e^{2t} + \\frac{t}{3}$\n\n(D) $e^{t}(C_1 \\cos(\\sqrt{2}t) + C_2 \\sin(\\sqrt{2}t)) + t$\n\n(E) $C_1 \\cos(t) + C_2 \\sin(t) + \\frac{t}{3} - \\frac{2}{9}$",
+    "correctAnswer": "E",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 47,
     "category": "Calculus",
     "difficulty": "Hard",
-    "problem": "What is the value of the line integral $\\int$ ( 5x + ) dx + ( 3x + 8y ) dy, where C is a straight path in the C xy-plane from the point (2, 0) to the point (0, 3) ?\n\n(A) 0\n(B) 10\n(C) 26\n(D) 41\n(E) 46"
+    "problem": "What is the value of the line integral $\\int_C (5x + 2y) dx + (3x + 8y) dy$, where $C$ is a straight path in the $xy$-plane from the point $(2, 0)$ to the point $(0, 3)$?\n\n(A) $0$\n\n(B) $10$\n\n(C) $26$\n\n(D) $41$\n\n(E) $46$",
+    "correctAnswer": "C",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 48,
     "category": "Topology",
     "difficulty": "Hard",
-    "problem": "Let f be a real-valued function defined for all (x, y) $\\in\\mathbb{R} 2 , and consider the graph of z = f ( x, y) in xyz-space. Which of the following statements are true? I. If all the level curves of f are parallel lines, then the graph is a plane. ∂f ∂f II. If and exist for all (x, y)\\in$\\mathbb{R} 2 and both are constant, then the graph is a plane. ∂x ∂y ∂ 2f ∂ 2f III. If and exist for all (x, y)$\\in$\\mathbb{R} 2 and both are identically zero, then the graph is a plane. ∂x∂y ∂y∂x\n\n(A) I only\n(B) II only\n(C) III only\n(D) I and II only\n(E) I, II, and III"
+    "problem": "Let $f$ be a real-valued function defined for all $(x, y) \\in \\mathbb{R}^2$, and consider the graph of $z = f(x, y)$ in $xyz$-space. Which of the following statements are true?\n\nI. If all the level curves of $f$ are parallel lines, then the graph is a plane.\nII. If $\\frac{\\partial f}{\\partial x}$ and $\\frac{\\partial f}{\\partial y}$ exist for all $(x, y) \\in \\mathbb{R}^2$ and both are constant, then the graph is a plane.\nIII. If $\\frac{\\partial^2 f}{\\partial x^2}$ and $\\frac{\\partial^2 f}{\\partial y^2}$ exist for all $(x, y) \\in \\mathbb{R}^2$ and both are identically zero, then the graph is a plane.\n\n(A) I only\n\n(B) II only\n\n(C) III only\n\n(D) I and II only\n\n(E) I, II, and III",
+    "correctAnswer": "B",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 49,
     "category": "Complex Analysis",
     "difficulty": "Hard",
-    "problem": "In the complex plane, let C be the circle { z = 1 + e iq: 0 $\\leq q \\leq$ 2p } , oriented counterclockwise. What is th 1 sin z value of dz? 2pi i Ëz -1¯ C\n\n(A) 0\n(B) co\n(C) si\n(D) s i1\n(E) s i"
+    "problem": "In the complex plane, let $C$ be the circle $\\{z = 1 + e^{i\\theta} : 0 \\leq \\theta \\leq 2\\pi\\}$, oriented counterclockwise. What is the value of $\\frac{1}{2\\pi i} \\int_C \\frac{\\sin z}{z - 1} dz$?\n\n(A) $0$\n\n(B) $\\cos(1)$\n\n(C) $\\sin(1)$\n\n(D) $1$\n\n(E) $\\pi$",
+    "correctAnswer": "E",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 50,
     "category": "Mathematics",
     "difficulty": "Hard",
-    "problem": "$\\int_0^1 \\int_0^1 e dydx = 0 2x\n\n(B) e -1$"
+    "problem": "$\\int_0^1 \\int_0^1 e^{x+y} dy dx =$\n\n(A) $e^2 - 2e + 1$\n\n(B) $e - 1$\n\n(C) $(e - 1)^2$\n\n(D) $e^2 - 1$\n\n(E) $2(e - 1)$",
+    "correctAnswer": "E",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 51,
     "category": "Real Analysis",
     "difficulty": "Hard",
-    "problem": "The flowchart above prints out a sequence of integers. Which of the following is a term in the sequence?\n\n(A) \n(B) \n(C) \n(D) \n(E) 32 59 81 360 1,000"
+    "problem": "The flowchart above prints out a sequence of integers. Which of the following is a term in the sequence?\n\n(A) $32$\n\n(B) $59$\n\n(C) $81$\n\n(D) $360$\n\n(E) $1000$",
+    "correctAnswer": "C",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 52,
     "category": "Abstract Algebra",
     "difficulty": "Hard",
-    "problem": "Let G be the group of permutations o objects. What is the total number of conjugacy classes of elements of G ?\n\n(A) 1\n(B) 2\n(C) 3\n(D) 4\n(E) 5"
+    "problem": "Let $G$ be the group of permutations of 5 objects. What is the total number of conjugacy classes of elements of $G$?\n\n(A) $1$\n\n(B) $2$\n\n(C) $3$\n\n(D) $4$\n\n(E) $5$",
+    "correctAnswer": "E",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 53,
     "category": "Linear Algebra",
     "difficulty": "Hard",
-    "problem": "Let v , v , v , and v be vectors in $\\mathbb{R}2, and consider the following six dot products. 1 2 3 4 v \\mathbb{R}$ v v $\\mathbb{R} v v \\mathbb{R}$ v v $\\mathbb{R} v v \\mathbb{R}$ v v $\\mathbb{R}$ 2 1 3 1 4 2 3 2 4 3 4 Which of the following statements about the six dot products could be true? I. All six are negative. II. Two are negative, and four are equal t. III. Two are positive, and four are equal t.\n\n(A) II only\n(B) I and II only\n(C) I and III only\n(D) II and III only\n(E) I, II, and III"
+    "problem": "Let $v_1$, $v_2$, $v_3$, and $v_4$ be vectors in $\\mathbb{R}^2$, and consider the following six dot products:\n$v_1 \\cdot v_2$, $v_1 \\cdot v_3$, $v_1 \\cdot v_4$, $v_2 \\cdot v_3$, $v_2 \\cdot v_4$, $v_3 \\cdot v_4$\n\nWhich of the following statements about the six dot products could be true?\n\nI. All six are negative.\nII. Two are negative, and four are equal to 0.\nIII. Two are positive, and four are equal to 0.\n\n(A) II only\n\n(B) I and II only\n\n(C) I and III only\n\n(D) II and III only\n\n(E) I, II, and III",
+    "correctAnswer": "D",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 54,
     "category": "Calculus",
     "difficulty": "Hard",
-    "problem": "Let y(t ) be the solution to the differential equation y' + 2ty = e - sin t such that y(0 ) = 0. Then y( $\\neq$ 0i) =\n\n(A) 2e\n(B) e\n(C) 0\n(D) e-\n(E) 2 e -"
+    "problem": "Let $y(t)$ be the solution to the differential equation $y' + 2ty = e^{-t^2} \\sin t$ such that $y(0) = 0$. Then $y(\\pi) =$\n\n(A) $2e^{-\\pi^2}$\n\n(B) $e^{-\\pi^2}$\n\n(C) $0$\n\n(D) $-e^{-\\pi^2}$\n\n(E) $-2e^{-\\pi^2}$",
+    "correctAnswer": "E",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 55,
     "category": "Probability",
     "difficulty": "Hard",
-    "problem": "Let X be a continuous random variable. The standard deviation of the sampling distribution of the sample mean for random samples o0 observations of X is equal t. What is the standard deviation of the sampling distribution of the sample mean for random samples o20 observations of X ?\n\n(A) 2\n(B) 4\n(C) 8\n(D) 12\n(E) 32"
+    "problem": "Let $X$ be a continuous random variable. The standard deviation of the sampling distribution of the sample mean for random samples of 10 observations of $X$ is equal to 4. What is the standard deviation of the sampling distribution of the sample mean for random samples of 40 observations of $X$?\n\n(A) $2$\n\n(B) $4$\n\n(C) $8$\n\n(D) $12$\n\n(E) $32$",
+    "correctAnswer": "B",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 56,
     "category": "Abstract Algebra",
     "difficulty": "Hard",
-    "problem": "Let R be a ring with identity such that = a for all a\\inR. W hich of the following statements must be true? I. a + a = 0 for all a\\inR. II. If b\\inR, then bn = 0 for some positive integer n. III. ab = ba for all a, b\\inR.\n\n(A) None\n(B) I only\n(C) II only\n(D) I and II\n(E) I and II$1_$"
+    "problem": "Let $R$ be a ring with identity such that $a^2 = a$ for all $a \\in R$. Which of the following statements must be true?\n\nI. $a + a = 0$ for all $a \\in R$.\nII. If $b \\in R$, then $b^n = 0$ for some positive integer $n$.\nIII. $ab = ba$ for all $a, b \\in R$.\n\n(A) None\n\n(B) I only\n\n(C) II only\n\n(D) I and II\n\n(E) I and III",
+    "correctAnswer": "E",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 57,
     "category": "Number Theory",
     "difficulty": "Hard",
-    "problem": "For each integer n \\ge, define the function I by I (x ) = $\\int$ (log t)n dt for all x > 1. Which of the following n must be true for each n \\ge and for all x > 1?\n\n(A) I (x ) = I (x ) + I (x) n n-1 n-2\n(B) I (x ) = x(log x)n - nI (x) n n -1\n(C) I (x ) = x(log x)n + nI (x) n n -1\n(D) I (x ) = 1 (log x)n - nI (x) n x n-1\n(E) I (x ) = 1 (log x)n + nI (x) n x n-1"
+    "problem": "For each integer $n \\geq 0$, define the function $I_n$ by $I_n(x) = \\int_1^x (\\log t)^n dt$ for all $x > 1$. Which of the following must be true for each $n \\geq 1$ and for all $x > 1$?\n\n(A) $I_n(x) = I_{n-1}(x) + I_{n-2}(x)$\n\n(B) $I_n(x) = x(\\log x)^n - nI_{n-1}(x)$\n\n(C) $I_n(x) = x(\\log x)^n + nI_{n-1}(x)$\n\n(D) $I_n(x) = \\frac{1}{x}(\\log x)^n - nI_{n-1}(x)$\n\n(E) $I_n(x) = \\frac{1}{x}(\\log x)^n + nI_{n-1}(x)$",
+    "correctAnswer": "B",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 58,
     "category": "Probability",
     "difficulty": "Hard",
-    "problem": "A total o5 identical rental trucks are to be distributed amon different cities. Each city can receive any number of trucks fro t5, as long as the total number of trucks received i5. For which of the following 29 24 subsets of the set of all possible distributions is the number of distributions equal to $\\mathbb{R} - \\mathbb{R}$ ? Ë 4¯ Ë 4 ¯\n\n(A) The distributions for which at leas city receive trucks\n(B) The distributions for which each city receives at leas truck\n(C) The distributions for which each city receives at leas trucks\n(D) The distributions for whic o cities receive the same number of trucks\n(E) The distributions for whic cities receive at leas truck each and the other city receive trucks"
+    "problem": "A total of 25 identical rental trucks are to be distributed among 5 different cities. Each city can receive any number of trucks from 0 to 25, as long as the total number of trucks received is 25. For which of the following subsets of the set of all possible distributions is the number of distributions equal to $\\binom{29}{4} - \\binom{24}{4}$?\n\n(A) The distributions for which at least 1 city receives 0 trucks\n\n(B) The distributions for which each city receives at least 1 truck\n\n(C) The distributions for which each city receives at least 2 trucks\n\n(D) The distributions for which no 2 cities receive the same number of trucks\n\n(E) The distributions for which 4 cities receive at least 1 truck each and the other city receives 0 trucks",
+    "correctAnswer": "A",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 59,
     "category": "Abstract Algebra",
     "difficulty": "Hard",
-    "problem": "Let $\\mathbb{R} be the ring of integers modul0, and let U be the group of all invertible elements in \\mathbb{R}$ unde0 30 30 multiplication. Let f be a group homomorphism from U to U with ker (f ) = {1, 11}. If f (7 ) = 7, whic0 30 of the following elements does f also map t ?\n\n(A) 11\n(B) 13\n(C) 17\n(D) 19\n(E) 29"
+    "problem": "Let $\\mathbb{Z}_{30}$ be the ring of integers modulo 30, and let $U_{30}$ be the group of all invertible elements in $\\mathbb{Z}_{30}$ under multiplication. Let $f$ be a group homomorphism from $U_{30}$ to $U_{30}$ with $\\ker(f) = \\{1, 11\\}$. If $f(7) = 7$, which of the following elements does $f$ also map to 7?\n\n(A) $11$\n\n(B) $13$\n\n(C) $17$\n\n(D) $19$\n\n(E) $29$",
+    "correctAnswer": "C",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 60,
     "category": "Linear Algebra",
     "difficulty": "Hard",
-    "problem": "A matrix M can be factored as M = LU, where 1 0 0 0 1 0 1 0 1 1 0 0$\\mathbb{R} 0 1 1 0\\mathbb{R}$ L = $\\mathbb{R} and U = \\mathbb{R}$. 1 0 1 0 0 0 1 2 $\\mathbb{R} \\mathbb{R}$ Ë1 -1 0 1¯ Ë0 0 0 2¯ 1 0$\\mathbb{R} If b = \\mathbb{R}$ and x is the solution of the system Mx = b, what is the first coordinate of the vector x ? 1 $\\mathbb{R}$ Ë0 ¯\n\n(A) -2\n(D) 1\n(E) 2"
+    "problem": "A matrix $M$ can be factored as $M = LU$, where\n$L = \\begin{pmatrix} 1 & 0 & 0 & 0 \\\\ 1 & 1 & 0 & 0 \\\\ 1 & 0 & 1 & 0 \\\\ 1 & -1 & 0 & 1 \\end{pmatrix}$ and $U = \\begin{pmatrix} 1 & 0 & 1 & 1 \\\\ 0 & 1 & 1 & 0 \\\\ 0 & 0 & 1 & 2 \\\\ 0 & 0 & 0 & 2 \\end{pmatrix}$.\n\nIf $b = \\begin{pmatrix} 1 \\\\ 1 \\\\ 1 \\\\ 0 \\end{pmatrix}$ and $x$ is the solution of the system $Mx = b$, what is the first coordinate of the vector $x$?\n\n(A) $-2$\n\n(B) $-1$\n\n(C) $0$\n\n(D) $1$\n\n(E) $2$",
+    "correctAnswer": "B",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 61,
     "category": "Complex Analysis",
     "difficulty": "Hard",
-    "problem": "A primitiv0th root of unity is defined as a complex number z such that 0 = 1 but zk $\\neq 0 for each integer k, wher \\leq$ k $\\leq$ 9. If S is the sum and P is the product of all the primitiv0th roots of unity, then\n\n(A) S = -1 and P = 1\n(B) S = 0 and P = -1\n(C) S = 0 and P = 1\n(D) S = 1 and P = -1\n(E) S = 1 and P = 1"
+    "problem": "A primitive 10th root of unity is defined as a complex number $z$ such that $z^{10} = 1$ but $z^k \\neq 1$ for each integer $k$, where $1 \\leq k \\leq 9$. If $S$ is the sum and $P$ is the product of all the primitive 10th roots of unity, then\n\n(A) $S = -1$ and $P = 1$\n\n(B) $S = 0$ and $P = -1$\n\n(C) $S = 0$ and $P = 1$\n\n(D) $S = 1$ and $P = -1$\n\n(E) $S = 1$ and $P = 1$",
+    "correctAnswer": "E",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 62,
     "category": "Topology",
     "difficulty": "Hard",
-    "problem": "For each of the following metrics d, consider the metric space ($\\mathbb{R}, d). For which of the metrics is (\\mathbb{R}$, d) NOT a complete metric space?\n\n(A) d( x, y) = x - y\n(B) d( x, y) = arctan x - arctan y\n(C) d( x, y) = -\n(D) d( x, y) = 3 x - 3y {0 if x = y\n(E) d( x, y) = 1 if x $\\neq$ 0i y"
+    "problem": "For each of the following metrics $d$, consider the metric space $(\\mathbb{R}, d)$. For which of the metrics is $(\\mathbb{R}, d)$ NOT a complete metric space?\n\n(A) $d(x, y) = |x - y|$\n\n(B) $d(x, y) = |\\arctan x - \\arctan y|$\n\n(C) $d(x, y) = \\left|\\frac{x}{1+|x|} - \\frac{y}{1+|y|}\\right|$\n\n(D) $d(x, y) = |3x - 3y|$\n\n(E) $d(x, y) = \\begin{cases} 0 & \\text{if } x = y \\\\ 1 & \\text{if } x \\neq y \\end{cases}$",
+    "correctAnswer": "B",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 63,
     "category": "Mathematics",
     "difficulty": "Hard",
-    "problem": "$\\int_0^1 \\sin \\pi x dx$ =\n\n(A) 0\n(B) $\\frac{1}{\\pi}$\n(C) $\\frac{2}{\\pi}$\n(D) 1\n(E) $\\pi$"
+    "problem": "$\\int_0^1 \\sin \\pi x \\, dx =$\n\n(A) $0$\n\n(B) $\\frac{1}{\\pi}$\n\n(C) $\\frac{2}{\\pi}$\n\n(D) $1$\n\n(E) $\\pi$",
+    "correctAnswer": "A",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 64,
     "category": "Mathematics",
     "difficulty": "Hard",
-    "problem": "For each of the following metrics d, consider the metric space ($\\mathbb{R}, d). For which of the metrics is (\\mathbb{R}$, d) NOT a complete metric space?\n\n(A) d(x, y) = |x - y|\n(B) d(x, y) = |arctan x - arctan y|\n(C) d(x, y) = |$\\frac{x}{1+|x|} - \\frac{y}{1+|y|}$|\n(D) d(x, y) = |3x - 3y|\n(E) $d(x, y) = \\begin{cases} 0 & \\text{if } x = y \\\\ 1 & \\text{if } x \\neq$ y \\end{cases}"
+    "problem": "For each of the following metrics $d$, consider the metric space $(\\mathbb{R}, d)$. For which of the metrics is $(\\mathbb{R}, d)$ NOT a complete metric space?\n\n(A) $d(x, y) = |x - y|$\n\n(B) $d(x, y) = |\\arctan x - \\arctan y|$\n\n(C) $d(x, y) = \\left|\\frac{x}{1+|x|} - \\frac{y}{1+|y|}\\right|$\n\n(D) $d(x, y) = |3x - 3y|$\n\n(E) $d(x, y) = \\begin{cases} 0 & \\text{if } x = y \\\\ 1 & \\text{if } x \\neq y \\end{cases}$",
+    "correctAnswer": "C",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 65,
     "category": "Probability",
     "difficulty": "Hard",
-    "problem": "$\\int_0^1 \\sin \\pi x dx$ =\n\n(A) 0\n(B) $\\frac{1}{\\pi}$\n(C) $\\frac{2}{\\pi}$\n(D) 50\n(E) $50\\pi$"
+    "problem": "$\\int_0^1 \\sin \\pi x \\, dx =$\n\n(A) $0$\n\n(B) $\\frac{1}{\\pi}$\n\n(C) $\\frac{2}{\\pi}$\n\n(D) $1$\n\n(E) $\\pi$",
+    "correctAnswer": "E",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   },
   {
     "id": 66,
     "category": "Abstract Algebra",
     "difficulty": "Hard",
-    "problem": "Let $X = \\{n \\in \\mathbb{N} : n \\geq 1\\}$ be the topological space with its topology generated by the sets of the form\n\n$$U_k = \\{n \\in X: n \\text{ divides } k\\}$$\n\nfor $k \\geq 1$, so that the open sets in $X$ are the empty set and arbitrary unions of the sets $U_k$.\n\nFor any $n \\in X$, the closure of $\\{n\\}$ in $X$ is\n\n(A) $\\{n\\}$\n(B) $\\{sn: s \\text{ is a positive integer}\\}$\n(C) $\\{t \\in X: t \\text{ divides } n\\}$\n(D) $\\{p: p \\text{ is a prime divisor of } n\\}$\n(E) $\\left\\{\\prod_{i=1}^{m} p_i : \\{p_1, p_2, p_3, \\ldots, p_m\\} \\text{ is any set of } m \\text{ distinct prime divisors of } n\\right\\}$"
+    "problem": "Let $X = \\{n \\in \\mathbb{N} : n \\geq 1\\}$ be the topological space with its topology generated by the sets of the form\n\n$$U_k = \\{n \\in X: n \\text{ divides } k\\}$$\n\nfor $k \\geq 1$, so that the open sets in $X$ are the empty set and arbitrary unions of the sets $U_k$.\n\nFor any $n \\in X$, the closure of $\\{n\\}$ in $X$ is\n\n(A) $\\{n\\}$\n\n(B) $\\{sn: s \\text{ is a positive integer}\\}$\n\n(C) $\\{t \\in X: t \\text{ divides } n\\}$\n\n(D) $\\{p: p \\text{ is a prime divisor of } n\\}$\n\n(E) $\\left\\{\\prod_{i=1}^{m} p_i : \\{p_1, p_2, p_3, \\ldots, p_m\\} \\text{ is any set of } m \\text{ distinct prime divisors of } n\\right\\}$",
+    "correctAnswer": "B",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
   }
 ]

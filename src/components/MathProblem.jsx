@@ -7,6 +7,8 @@ import './MathProblem.css';
 
 const MathProblem = () => {
   const [currentProblemIndex, setCurrentProblemIndex] = useState(0);
+  const [selectedCategory, setSelectedCategory] = useState('All');
+  const [selectedDifficulty, setSelectedDifficulty] = useState('All');
   const [solution, setSolution] = useState('');
   const [hint, setHint] = useState('');
   const [loading, setLoading] = useState(false);
@@ -15,14 +17,93 @@ const MathProblem = () => {
   const [showHint, setShowHint] = useState(false);
   const [error, setError] = useState('');
   const [hintError, setHintError] = useState('');
+  const [selectedAnswer, setSelectedAnswer] = useState('');
+  const [showAnswerFeedback, setShowAnswerFeedback] = useState(false);
+  const [answerSubmitted, setAnswerSubmitted] = useState(false);
 
-  const currentProblem = mathProblems[currentProblemIndex];
+  // Get unique categories and difficulties from the problems
+  const uniqueCategories = [...new Set(mathProblems.map(problem => problem.category))].sort();
+  const categories = ['All', ...uniqueCategories];
+  
+  const uniqueDifficulties = [...new Set(mathProblems.map(problem => problem.difficulty))].sort();
+  const difficulties = ['All', ...uniqueDifficulties];
+  
+  // Filter problems based on selected category and difficulty
+  const filteredProblems = mathProblems.filter(problem => {
+    const categoryMatch = selectedCategory === 'All' || problem.category === selectedCategory;
+    const difficultyMatch = selectedDifficulty === 'All' || problem.difficulty === selectedDifficulty;
+    return categoryMatch && difficultyMatch;
+  });
+
+  const currentProblem = filteredProblems[currentProblemIndex];
+
+  // Reset to first problem when filters change
+  useEffect(() => {
+    setCurrentProblemIndex(0);
+    setSolution('');
+    setHint('');
+    setShowSolution(false);
+    setShowHint(false);
+    setError('');
+    setHintError('');
+    setSelectedAnswer('');
+    setShowAnswerFeedback(false);
+    setAnswerSubmitted(false);
+  }, [selectedCategory, selectedDifficulty]);
+
+  // Reset answer state when problem changes
+  useEffect(() => {
+    setSelectedAnswer('');
+    setShowAnswerFeedback(false);
+    setAnswerSubmitted(false);
+    setSolution('');
+    setHint('');
+    setShowSolution(false);
+    setShowHint(false);
+    setError('');
+    setHintError('');
+  }, [currentProblemIndex]);
+
+  const handleAnswerSelect = (choice) => {
+    if (!answerSubmitted) {
+      setSelectedAnswer(choice);
+    }
+  };
+
+  const handleAnswerSubmit = () => {
+    if (selectedAnswer && !answerSubmitted) {
+      setAnswerSubmitted(true);
+      setShowAnswerFeedback(true);
+    }
+  };
 
   // Function to render text with LaTeX math
   const renderMathText = (text) => {
     if (!text) return null;
     
     let processedText = text;
+    
+    // Step 0: Fix spacing issues and format answer choices
+    // Fix specific LaTeX command issues that eat spaces
+    processedText = processedText.replace(/Then\\int/g, 'Then $\\int$');
+    processedText = processedText.replace(/constant\.Then/g, 'constant. Then');
+    processedText = processedText.replace(/([a-zA-Z])\\int/g, '$1 $\\int$');
+    
+    // Fix missing spaces around dollar signs - but only when not already properly spaced
+    // Removed the problematic lines that were adding extra dollar signs
+    
+    // More comprehensive word boundary fixes
+    processedText = processedText.replace(/([a-z])([A-Z])/g, '$1 $2');
+    processedText = processedText.replace(/([a-z])(\d)/g, '$1 $2');
+    processedText = processedText.replace(/(\d)([a-z])/g, '$1 $2');
+    
+    // Fix answer choice formatting - ensure proper line breaks and spacing
+    processedText = processedText.replace(/\(([A-E])\)\s*/g, '\n\n($1) ');
+    
+    // Clean up multiple spaces but preserve intentional line breaks
+    processedText = processedText.replace(/[ \t]+/g, ' ');
+    processedText = processedText.replace(/\n\s+/g, '\n');
+    processedText = processedText.trim();
     
     // Step 1: Handle \( ... \) LaTeX display math delimiters (mainly from LLM responses)
     processedText = processedText.replace(/\\\(/g, '$').replace(/\\\)/g, '$');
@@ -34,43 +115,48 @@ const MathProblem = () => {
     processedText = processedText.replace(/\$\$/g, '$');
     
     // Step 4: Clean up malformed LaTeX commands that appear outside of dollar signs
-    processedText = processedText.replace(/\\int\s+(\d+)\^{([^}]+)}\s+dx/g, '$\\int $1^{$2} dx$');
-    processedText = processedText.replace(/\\int\s+(\d+)\^{([^}]+)}\s*\\cdot\s*\\frac{([^}]+)}{([^}]+)}/g, '$\\int $1^{$2} \\cdot \\frac{$3}{$4}$');
-    
-    // Step 5: Handle common math expressions that aren't wrapped
-    if (!processedText.includes('$')) {
-      // This is likely LLM-generated content that needs LaTeX conversion
-      processedText = processedText
-        // Handle basic LaTeX commands that aren't wrapped
-        .replace(/\\(pi|alpha|beta|gamma|delta|epsilon|theta|lambda|mu|sigma|phi|omega)/g, '$\\$1$')
-        .replace(/\\(int|sum|prod|lim|sqrt|frac|sin|cos|tan|log|ln|exp)/g, '$\\$1$')
-        .replace(/\\(leq|geq|neq|pm|infty|partial|times|cdot)/g, '$\\$1$')
-        
-        // Handle fractions that aren't wrapped
-        .replace(/\\frac\{([^{}]+)\}\{([^{}]+)\}/g, '$\\frac{$1}{$2}$')
-        
-        // Handle square roots that aren't wrapped
-        .replace(/\\sqrt\{([^{}]+)\}/g, '$\\sqrt{$1}$')
-        
-        // Handle simple exponents like x^2, x^{2}
-        .replace(/([a-zA-Z])\^(\{?[0-9a-zA-Z]+\}?)/g, '$$1^{$2}$')
-        
-        // Handle expressions with exponents in brackets/parentheses
-        .replace(/\[([^\]]+)\]\^(\{?[0-9a-zA-Z]+\}?)/g, '$[$1]^{$2}$')
-        .replace(/\(([^)]+)\)\^(\{?[0-9a-zA-Z]+\}?)/g, '$($1)^{$2}$')
-        
-        // Clean up braces in exponents
-        .replace(/\^\{([0-9a-zA-Z]+)\}/g, '^{$1}')
-        
-        // Clean up multiple consecutive dollar signs
-        .replace(/\$+/g, '$')
-        
-        // Fix empty math expressions
-        .replace(/\$\s*\$/g, ' ');
+    // But only if they're actually outside dollar signs - check for this more carefully
+    // Split by $ first, then only process the non-math parts
+    const dollarParts = processedText.split('$');
+    for (let i = 0; i < dollarParts.length; i += 2) { // Even indices are non-math text
+      if (dollarParts[i]) {
+        dollarParts[i] = dollarParts[i].replace(/\\([a-zA-Z]+)\s*\{([^}]*)\}/g, (match, command, content) => {
+          return `$\\${command}{${content}}$`;
+        });
+      }
     }
-
-    // Step 6: Split by $ delimiters and render
-    const parts = processedText.split(/(\$[^$]*\$)/);
+    processedText = dollarParts.join('$');
+    
+    // Step 5: Split by $ and handle inline math
+    const parts = [];
+    let currentPart = '';
+    let inMath = false;
+    
+    for (let i = 0; i < processedText.length; i++) {
+      const char = processedText[i];
+      if (char === '$') {
+        if (inMath) {
+          // End of math mode
+          currentPart += '$';
+          parts.push(currentPart);
+          currentPart = '';
+          inMath = false;
+        } else {
+          // Start of math mode
+          if (currentPart) {
+            parts.push(currentPart);
+          }
+          currentPart = '$';
+          inMath = true;
+        }
+      } else {
+        currentPart += char;
+      }
+    }
+    
+    if (currentPart) {
+      parts.push(currentPart);
+    }
     
     return parts.map((part, index) => {
       if (part.startsWith('$') && part.endsWith('$') && part.length > 2) {
@@ -87,7 +173,7 @@ const MathProblem = () => {
         }
         return null;
       } else {
-        // Regular text, preserve line breaks
+        // Regular text, preserve line breaks and add proper spacing
         return part.split('\n').map((line, lineIndex) => (
           <React.Fragment key={`${index}-${lineIndex}`}>
             {lineIndex > 0 && <br />}
@@ -142,26 +228,22 @@ const MathProblem = () => {
     }
   };
 
+  const handleCategoryChange = (event) => {
+    setSelectedCategory(event.target.value);
+  };
+
+  const handleDifficultyChange = (event) => {
+    setSelectedDifficulty(event.target.value);
+  };
+
   const handleNextProblem = () => {
-    const nextIndex = (currentProblemIndex + 1) % mathProblems.length;
+    const nextIndex = (currentProblemIndex + 1) % filteredProblems.length;
     setCurrentProblemIndex(nextIndex);
-    setSolution('');
-    setHint('');
-    setShowSolution(false);
-    setShowHint(false);
-    setError('');
-    setHintError('');
   };
 
   const handlePreviousProblem = () => {
-    const prevIndex = currentProblemIndex === 0 ? mathProblems.length - 1 : currentProblemIndex - 1;
+    const prevIndex = currentProblemIndex === 0 ? filteredProblems.length - 1 : currentProblemIndex - 1;
     setCurrentProblemIndex(prevIndex);
-    setSolution('');
-    setHint('');
-    setShowSolution(false);
-    setShowHint(false);
-    setError('');
-    setHintError('');
   };
 
   const getDifficultyColor = (difficulty) => {
@@ -238,8 +320,47 @@ const MathProblem = () => {
   return (
     <div className="math-problem-container">
       <div className="header">
-        <h1>Math Problems</h1>
-        <p>Practice math problems with AI-powered solutions</p>
+      </div>
+
+      {/* Filter Dropdowns */}
+      <div className="filter-container">
+        <div className="filter-group">
+          <label htmlFor="category-filter" className="filter-label">
+            Category:
+          </label>
+          <select 
+            id="category-filter"
+            value={selectedCategory} 
+            onChange={handleCategoryChange}
+            className="category-dropdown"
+          >
+            {categories.map(category => (
+              <option key={category} value={category}>
+                {category}
+                {category !== 'All' && ` (${mathProblems.filter(p => p.category === category).length})`}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <div className="filter-group">
+          <label htmlFor="difficulty-filter" className="filter-label">
+              Difficulty:
+          </label>
+          <select 
+            id="difficulty-filter"
+            value={selectedDifficulty} 
+            onChange={handleDifficultyChange}
+            className="category-dropdown"
+          >
+            {difficulties.map(difficulty => (
+              <option key={difficulty} value={difficulty}>
+                {difficulty}
+                {difficulty !== 'All' && ` (${mathProblems.filter(p => p.difficulty === difficulty).length})`}
+              </option>
+            ))}
+          </select>
+        </div>
       </div>
 
       <div className="problem-card">
@@ -254,7 +375,13 @@ const MathProblem = () => {
             </span>
           </div>
           <div className="problem-counter">
-            Problem {currentProblemIndex + 1} of {mathProblems.length}
+            Problem {currentProblemIndex + 1} of {filteredProblems.length}
+            {selectedCategory !== 'All' && (
+              <span className="filter-info"> • {selectedCategory}</span>
+            )}
+            {selectedDifficulty !== 'All' && (
+              <span className="filter-info"> • {selectedDifficulty}</span>
+            )}
           </div>
         </div>
 
@@ -274,6 +401,57 @@ const MathProblem = () => {
             </div>
           )}
         </div>
+
+        {/* Answer Choice Interface */}
+        {currentProblem.choices && (
+          <div className="answer-section">
+            <h3>Select your answer:</h3>
+            <div className="answer-choices">
+              {currentProblem.choices.map((choice) => (
+                <button
+                  key={choice}
+                  className={`answer-choice ${selectedAnswer === choice ? 'selected' : ''} ${
+                    answerSubmitted 
+                      ? choice === currentProblem.correctAnswer 
+                        ? 'correct' 
+                        : selectedAnswer === choice 
+                          ? 'incorrect' 
+                          : 'disabled'
+                      : ''
+                  }`}
+                  onClick={() => handleAnswerSelect(choice)}
+                  disabled={answerSubmitted}
+                >
+                  {choice}
+                </button>
+              ))}
+            </div>
+            
+            {selectedAnswer && !answerSubmitted && (
+              <button className="submit-answer-btn" onClick={handleAnswerSubmit}>
+                Submit Answer
+              </button>
+            )}
+
+            {showAnswerFeedback && (
+              <div className={`answer-feedback ${selectedAnswer === currentProblem.correctAnswer ? 'correct' : 'incorrect'}`}>
+                {selectedAnswer === currentProblem.correctAnswer ? (
+                  <div className="feedback-correct">
+                    <span className="feedback-icon">✅</span>
+                    <span className="feedback-text">Correct! Well done!</span>
+                  </div>
+                ) : (
+                  <div className="feedback-incorrect">
+                    <span className="feedback-icon">❌</span>
+                    <span className="feedback-text">
+                      Incorrect. The correct answer is <strong>{currentProblem.correctAnswer}</strong>.
+                    </span>
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
+        )}
 
         <div className="action-buttons">
           <button 

@@ -1,7 +1,16 @@
-/* Global App Styles */
-.App {
-  width: 100%;
+#root {
+  margin: 0;
+  padding: 0;
   min-height: 100vh;
+}
+
+.App {
+  min-height: 100vh;
+  background: #f1f5f9;
+}
+
+.main-content {
+  /* Removed padding-top to eliminate empty space */
 }
 
 /* Reset some default styles */
