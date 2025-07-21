@@ -22,7 +22,33 @@ const MathProblem = () => {
   const [answerSubmitted, setAnswerSubmitted] = useState(false);
 
   // Get unique categories and difficulties from the problems
-  const uniqueCategories = [...new Set(mathProblems.map(problem => problem.category))].sort();
+  // Use predefined order for categories to match mathematical hierarchy
+  const predefinedCategoryOrder = [
+    'Calculus',
+    'Algebra', 
+    'Real Analysis',
+    'Topology',
+    'Discrete Math',
+    'Geometry',
+    'Complex Analysis',
+    'Probability',
+    'Statistics',
+    'Numerical Analysis'
+  ];
+  
+  const uniqueCategories = [...new Set(mathProblems.map(problem => problem.category))]
+    .sort((a, b) => {
+      const indexA = predefinedCategoryOrder.indexOf(a);
+      const indexB = predefinedCategoryOrder.indexOf(b);
+      // If both categories are in predefined list, sort by their predefined order
+      if (indexA !== -1 && indexB !== -1) return indexA - indexB;
+      // If only one is in predefined list, it comes first
+      if (indexA !== -1) return -1;
+      if (indexB !== -1) return 1;
+      // If neither is in predefined list, sort alphabetically
+      return a.localeCompare(b);
+    });
+  
   const categories = ['All', ...uniqueCategories];
   
   const uniqueDifficulties = [...new Set(mathProblems.map(problem => problem.difficulty))].sort();

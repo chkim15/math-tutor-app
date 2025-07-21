@@ -71,7 +71,7 @@
   },
   {
     "id": 6,
-    "category": "Functions",
+    "category": "Real Analysis",
     "difficulty": "Medium",
     "problem": "Let $f$ be a real-valued function such that $f(f(x)) = x$ for all real numbers $x$ in the domain of $f$. Which of the following could be the graph of $f$ in the $xy$-plane?",
     "image": "/src/assets/images/problem6-graphs.png",
@@ -116,7 +116,7 @@
   {
     "id": 9,
     "category": "Probability",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "problem": "Of the 10 lightbulbs in a box, 3 are defective. If 2 lightbulbs are to be chosen from the box at random and without replacement, what is the probability that at least 1 of the 2 lightbulbs will be defective?\n\n(A) $\\frac{3}{10}$\n\n(B) $\\frac{7}{15}$\n\n(C) $\\frac{8}{15}$\n\n(D) $\\frac{19}{30}$\n\n(E) $\\frac{7}{10}$",
     "correctAnswer": "C",
     "choices": [
@@ -208,7 +208,7 @@
   {
     "id": 15,
     "category": "Calculus",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "problem": "Find the volume of the solid obtained by rotating the region bounded by the curves $y = \\frac{1}{x}$ and the $x$-axis between $x = 1$ and $x = 2$ about the $x$-axis.\n\n(A) $\\pi$\n\n(B) $\\frac{\\pi}{2}$\n\n(C) $\\frac{\\pi}{3}$\n\n(D) $\\frac{\\pi}{4}$\n\n(E) $\\frac{2\\pi}{3}$\n\n(F) $\\frac{3\\pi}{4}$",
     "correctAnswer": "A",
     "choices": [
@@ -223,7 +223,7 @@
   {
     "id": 16,
     "category": "Calculus",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "problem": "Find the volume of the solid obtained by rotating the region bounded by the curves $y = x$ and $y = x^2$ about the $y$-axis.\n\n(A) $\\frac{\\pi}{2}$\n\n(B) $\\frac{\\pi}{3}$\n\n(C) $\\frac{\\pi}{4}$\n\n(D) $\\frac{\\pi}{5}$\n\n(E) $\\frac{\\pi}{6}$\n\n(F) $\\frac{\\pi}{7}$",
     "correctAnswer": "D",
     "choices": [
@@ -266,7 +266,7 @@
   },
   {
     "id": 19,
-    "category": "Mathematics",
+    "category": "Calculus",
     "difficulty": "Medium",
     "problem": "In the $xy$-plane, what is the point on the curve $y = x^2 + 3$ that is closest to the origin?\n\n(A) $\\left(-\\frac{1}{2}, \\frac{11}{4}\\right)$\n\n(B) $\\left(-\\frac{3}{2}, \\frac{21}{4}\\right)$\n\n(C) $(-1, 4)$\n\n(D) $(0, 3)$\n\n(E) $\\left(\\frac{1}{2}, \\frac{13}{4}\\right)$",
     "correctAnswer": "C",
@@ -294,7 +294,7 @@
   },
   {
     "id": 21,
-    "category": "Number Theory",
+    "category": "Discrete Math",
     "difficulty": "Medium",
     "problem": "If $x$ and $y$ are integers such that $2x + 2y \\equiv 1 \\pmod{23}$ and $x + 7y \\equiv 1 \\pmod{23}$, then $x + 3y$ is congruent modulo 23 to\n\n(A) $2$\n\n(B) $5$\n\n(C) $7$\n\n(D) $10$\n\n(E) $11$",
     "correctAnswer": "C",
@@ -308,7 +308,7 @@
   },
   {
     "id": 22,
-    "category": "Mathematics",
+    "category": "Calculus",
     "difficulty": "Medium",
     "problem": "Consider triangle $ABC$ with sides $AB = 6$, $AC = 8$, and $BC = 12$. Let $P$ be a point on side $AB$ such that $AP = 4$, and let $Q$ be a point on side $AC$ such that angles $APQ$ and $ACB$ are congruent. What is the length of line segment $PQ$?\n\n(A) $3$\n\n(B) $4$\n\n(C) $5$\n\n(D) $6$\n\n(E) $8$",
     "correctAnswer": "D",
@@ -322,7 +322,7 @@
   },
   {
     "id": 23,
-    "category": "Mathematics",
+    "category": "Calculus",
     "difficulty": "Medium",
     "problem": "In the system of equations in the real variables $x_1$, $x_2$, $x_3$, and $x_4$, where $a$, $b$, and $c$ are real constants. What is the set of all $(a,b,c) \\in \\mathbb{R}^3$ for which the system is consistent?\n\n(A) $\\{(a,b,c) : a + b + c = 0\\}$\n\n(B) $\\{(a,b,c) : a = b = c\\}$\n\n(C) $\\{(a,b,c) : a + 2b + 3c = 0\\}$\n\n(D) $\\{(a,b,c) : a - b + c = 0\\}$\n\n(E) $\\mathbb{R}^3$",
     "correctAnswer": "E",
@@ -336,7 +336,7 @@
   },
   {
     "id": 24,
-    "category": "Linear Algebra",
+    "category": "Algebra",
     "difficulty": "Medium",
     "problem": "Which of the following sets of vectors is a spanning set for the null space of the real matrix $A = \\begin{pmatrix} 2 & 1 & -1 \\\\ 0 & 1 & 2 \\end{pmatrix}$?\n\n(A) $\\left\\{\\begin{pmatrix} 3 \\\\ -4 \\\\ 2 \\end{pmatrix}\\right\\}$\n\n(B) $\\left\\{\\begin{pmatrix} 1 \\\\ -2 \\\\ 1 \\end{pmatrix}\\right\\}$\n\n(C) $\\left\\{\\begin{pmatrix} 3 \\\\ 2 \\\\ -1 \\end{pmatrix}\\right\\}$\n\n(D) $\\left\\{\\begin{pmatrix} -5 \\\\ 1 \\\\ 0 \\end{pmatrix}, \\begin{pmatrix} 3 \\\\ -2 \\\\ 1 \\end{pmatrix}\\right\\}$\n\n(E) $\\left\\{\\begin{pmatrix} -5 \\\\ 10 \\\\ 0 \\end{pmatrix}\\right\\}$",
     "correctAnswer": "B",
@@ -350,7 +350,7 @@
   },
   {
     "id": 25,
-    "category": "Graph Theory",
+    "category": "Discrete Math",
     "difficulty": "Hard",
     "problem": "The graph of the function $f(x) = A \\cos(wx - \\phi)$ is shown in the $xy$-plane, where $A$, $w$, and $\\phi$ are nonnegative constants. Which of the following could be the value of $\\phi$?\n\n(A) $0$\n\n(B) $\\frac{\\pi}{2}$\n\n(C) $\\pi$\n\n(D) $\\frac{3\\pi}{2}$\n\n(E) $2\\pi$",
     "correctAnswer": "D",
@@ -364,7 +364,7 @@
   },
   {
     "id": 26,
-    "category": "Mathematics",
+    "category": "Calculus",
     "difficulty": "Hard",
     "problem": "If $f$ is the function defined by $f(x) = \\max\\{4-x, x+2\\}$ for $-2 \\leq x \\leq 2$, what is the value of $\\int_{-2}^{2} f(x) dx$?\n\n(A) $2$\n\n(B) $4$\n\n(C) $6$\n\n(D) $2 + 2\\pi$\n\n(E) $6 + 2\\pi$",
     "correctAnswer": "C",
@@ -378,7 +378,7 @@
   },
   {
     "id": 27,
-    "category": "Mathematics",
+    "category": "Calculus",
     "difficulty": "Hard",
     "problem": "Let $P$, $Q$, and $R$ be logical propositions. Consider the statement \"If $P$ is true, then $Q$ is true and $R$ is true.\" Which of the following is the negation of the statement?\n\n(A) $P$ is true, and $Q$ is false or $R$ is false.\n\n(B) $P$ is false or $Q$ is true or $R$ is true.\n\n(C) $P$ is false or $Q$ is false or $R$ is false.\n\n(D) If $Q$ is true and $R$ is true, then $P$ is true.\n\n(E) If $P$ is false, then $Q$ is false or $R$ is false.",
     "correctAnswer": "A",
@@ -406,7 +406,7 @@
   },
   {
     "id": 29,
-    "category": "Mathematics",
+    "category": "Calculus",
     "difficulty": "Hard",
     "problem": "For all real values of $x$, let $f$ be the function defined by $f(x) = \\int_0^x (\\cos^3 y)(2 + \\sin^3 y) dy$. On which of the following intervals is $f$ increasing?\n\n(A) $\\left(-\\frac{\\pi}{2}, 0\\right)$\n\n(B) $\\left(-\\frac{\\pi}{4}, \\frac{\\pi}{4}\\right)$\n\n(C) $\\left(0, \\frac{\\pi}{2}\\right)$\n\n(D) $\\left(\\frac{\\pi}{4}, \\frac{3\\pi}{4}\\right)$\n\n(E) $\\left(\\frac{\\pi}{2}, \\pi\\right)$",
     "correctAnswer": "B",
@@ -420,7 +420,7 @@
   },
   {
     "id": 30,
-    "category": "Graph Theory",
+    "category": "Discrete Math",
     "difficulty": "Hard",
     "problem": "Which of the following best represents the graph of the curve $c: [0, 2\\pi] \\to \\mathbb{R}^2$ given by $c(t) = (\\cos t, \\sin t)$ in the $xy$-plane?\n\n(A) A circle centered at origin\n\n(B) A parabola\n\n(C) A line\n\n(D) An ellipse\n\n(E) A hyperbola",
     "correctAnswer": "C",
@@ -435,7 +435,7 @@
   {
     "id": 31,
     "category": "Probability",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "problem": "Four cubes, each with faces numbered 1 to 6, are to be rolled. When each cube is rolled, each number is equally likely to appear on its top face. What is the probability that at least two of the cubes will have the same number appear on their top faces?\n\n(A) $\\frac{2}{3}$\n\n(B) $\\frac{13}{18}$\n\n(C) $\\frac{49}{54}$\n\n(D) $\\frac{23}{24}$\n\n(E) $\\frac{211}{216}$",
     "correctAnswer": "B",
     "choices": [
@@ -448,7 +448,7 @@
   },
   {
     "id": 32,
-    "category": "Abstract Algebra",
+    "category": "Algebra",
     "difficulty": "Hard",
     "problem": "Which of the following sets of complex numbers is NOT a group under multiplication?\n\n(A) $\\{a + bi : a$ and $b$ are positive rational numbers$\\}$\n\n(B) $\\{a + bi : a$ and $b$ are real numbers such that $a^2 + b^2 \\neq 0\\}$\n\n(C) $\\{a + bi : a$ and $b$ are integers such that $a^2 + b^2 = 1\\}$\n\n(D) $\\{a + bi : a$ and $b$ are rational numbers such that $a^2 + b^2 = 1\\}$\n\n(E) $\\{a + bi : a$ and $b$ are real numbers such that $a^2 + b^2 = 1\\}$",
     "correctAnswer": "A",
@@ -462,7 +462,7 @@
   },
   {
     "id": 33,
-    "category": "Mathematics",
+    "category": "Calculus",
     "difficulty": "Hard",
     "problem": "A spherical tank of radius 5 meters contains water that is slowly draining out. At the instant that measurements are taken, the maximum depth of the water in the tank is 3 meters, and the depth is decreasing by 0.1 meters per second. What is the rate of decrease of the volume of the water, in cubic meters per second, at that instant?\n\n(A) $16\\pi$\n\n(B) $59\\pi$\n\n(C) $98\\pi$\n\n(D) $176\\pi$\n\n(E) $3.3\\pi$",
     "correctAnswer": "A",
@@ -476,7 +476,7 @@
   },
   {
     "id": 34,
-    "category": "Number Theory",
+    "category": "Discrete Math",
     "difficulty": "Hard",
     "problem": "Let $f$ be the function defined by $f(x) = \\frac{1}{1-x}$ for all real numbers $x$ except $x = 1$. Let $f^{(2)}$ denote the composition $f \\circ f$. Then $f^{(2)}(x) =$\n\n(A) $\\frac{1}{x}$\n\n(B) $\\frac{x-1}{x}$\n\n(C) $\\frac{x}{x-1}$\n\n(D) $\\frac{1}{2-x}$\n\n(E) $\\frac{2-x}{1-x}$",
     "correctAnswer": "A",
@@ -518,7 +518,7 @@
   },
   {
     "id": 37,
-    "category": "Mathematics",
+    "category": "Calculus",
     "difficulty": "Hard",
     "problem": "What is the maximum value of the function on $\\mathbb{R}^3$ defined by $f(x, y, z) = x - 3y + 2z$ subject to the constraint $x^2 + y^2 + z^2 = 9$?\n\n(A) $3\\sqrt{14}$\n\n(B) $\\sqrt{14}$\n\n(C) $2\\sqrt{14}$\n\n(D) $6$\n\n(E) $9$",
     "correctAnswer": "C",
@@ -532,7 +532,7 @@
   },
   {
     "id": 38,
-    "category": "Linear Algebra",
+    "category": "Algebra",
     "difficulty": "Hard",
     "problem": "Let $A$ and $B$ be linear transformations from $\\mathbb{R}^{12}$ to $\\mathbb{R}^{12}$ such that the null space of $A$ has dimension 5 and the null space of $B$ has dimension 3. If $d$ is the dimension of the null space of the linear transformation given by the composition $A \\circ B$, which of the following indicates all of the possible values of the integer $d$?\n\n(A) $2 \\leq d \\leq 8$\n\n(B) $3 \\leq d \\leq 5$\n\n(C) $3 \\leq d \\leq 8$\n\n(D) $5 \\leq d \\leq 8$\n\n(E) $5 \\leq d \\leq 10$",
     "correctAnswer": "D",
@@ -546,7 +546,7 @@
   },
   {
     "id": 39,
-    "category": "Linear Algebra",
+    "category": "Algebra",
     "difficulty": "Hard",
     "problem": "In the matrix $\\begin{pmatrix} 1 & 2 & 3 \\\\ 4 & x & 6 \\\\ 7 & 8 & 9 \\end{pmatrix}$ where $x \\in \\mathbb{R}$, for how many distinct values of $x$ is the matrix noninvertible?\n\n(A) None\n\n(B) One\n\n(C) Two\n\n(D) Three\n\n(E) Four",
     "correctAnswer": "E",
@@ -560,7 +560,7 @@
   },
   {
     "id": 40,
-    "category": "Mathematics",
+    "category": "Calculus",
     "difficulty": "Hard",
     "problem": "Consider 10 lines in the plane such that no two of the lines are parallel and no three of the lines have a common point. The 10 lines divide the plane into how many regions?\n\n(A) $36$\n\n(B) $45$\n\n(C) $46$\n\n(D) $55$\n\n(E) $56$",
     "correctAnswer": "E",
@@ -574,7 +574,7 @@
   },
   {
     "id": 41,
-    "category": "Linear Algebra",
+    "category": "Algebra",
     "difficulty": "Hard",
     "problem": "Which of the following statements is true for every $3 \\times 3$ matrix $M$ with real entries?\n\n(A) $M$ has 3 linearly independent eigenvectors.\n\n(B) $M$ has at most one complex eigenvalue.\n\n(C) $M$ has at least one real eigenvalue.\n\n(D) If $M$ is invertible, then $M$ has 3 distinct eigenvalues.\n\n(E) If $M$ has orthogonal eigenvectors, then $M$ has at least 2 distinct eigenvalues.",
     "correctAnswer": "C",
@@ -588,8 +588,8 @@
   },
   {
     "id": 42,
-    "category": "Mathematics",
-    "difficulty": "Hard",
+    "category": "Calculus",
+    "difficulty": "Medium",
     "problem": "What is the area of the triangle in $\\mathbb{R}^3$ with vertices $(1,3,2)$, $(3,1,2)$, and $(-2,0,4)$?\n\n(A) $\\frac{\\sqrt{11}}{2}$\n\n(B) $\\sqrt{11}$\n\n(C) $\\frac{3\\sqrt{11}}{2}$\n\n(D) $2\\sqrt{11}$\n\n(E) $\\frac{5\\sqrt{11}}{2}$",
     "correctAnswer": "A",
     "choices": [
@@ -602,7 +602,7 @@
   },
   {
     "id": 43,
-    "category": "Mathematics",
+    "category": "Calculus",
     "difficulty": "Hard",
     "problem": "The relation $R$ is defined on $\\mathbb{R}$ as follows. For $x, y \\in \\mathbb{R}$, $xRy$ if $(x - y)(xy + 2) = 0$. Which of the following statements are true?\n\nI. $xRx$ for all $x \\in \\mathbb{R}$.\nII. If $x, y \\in \\mathbb{R}$ and $xRy$, then $yRx$.\nIII. If $x, y, z \\in \\mathbb{R}$ and $xRy$ and $yRz$, then $xRz$.\n\n(A) I only\n\n(B) I and II only\n\n(C) I and III only\n\n(D) II and III only\n\n(E) I, II, and III",
     "correctAnswer": "E",
@@ -616,7 +616,7 @@
   },
   {
     "id": 44,
-    "category": "Mathematics",
+    "category": "Calculus",
     "difficulty": "Hard",
     "problem": "Two cell phone towers, $A$ and $B$, are in a flat region 20 miles apart. If a new tower $S$ is to be located in the region such that the distance between $S$ and $A$ is 5 miles greater than the distance between $S$ and $B$, then the locus of possible points for $S$ is best described by\n\n(A) a branch of a hyperbola\n\n(B) a circle\n\n(C) an ellipse\n\n(D) a line\n\n(E) a parabola",
     "correctAnswer": "A",
@@ -630,7 +630,7 @@
   },
   {
     "id": 45,
-    "category": "Mathematics",
+    "category": "Calculus",
     "difficulty": "Hard",
     "problem": "Let $u(x, y)$ and $v(x, y)$ be real-valued differentiable functions that are implicitly defined by the equations $x = f(u, v)$ and $y = g(u, v)$, where $f$ and $g$ are real-valued differentiable functions. Which of the following is an expression for $\\frac{\\partial u}{\\partial x}$?\n\n(A) $\\frac{\\partial f}{\\partial u}$\n\n(B) $\\frac{\\partial g}{\\partial v}$\n\n(C) $\\frac{1}{\\frac{\\partial f}{\\partial u}}$ if $\\frac{\\partial f}{\\partial u} \\neq 0$\n\n(D) $\\frac{\\frac{\\partial f}{\\partial u}}{\\frac{\\partial f}{\\partial u} \\frac{\\partial g}{\\partial v} - \\frac{\\partial f}{\\partial v} \\frac{\\partial g}{\\partial u}}$ if $\\frac{\\partial f}{\\partial u} \\frac{\\partial g}{\\partial v} - \\frac{\\partial f}{\\partial v} \\frac{\\partial g}{\\partial u} \\neq 0$\n\n(E) $\\frac{\\frac{\\partial g}{\\partial v}}{\\frac{\\partial f}{\\partial u} \\frac{\\partial g}{\\partial v} - \\frac{\\partial f}{\\partial v} \\frac{\\partial g}{\\partial u}}$ if $\\frac{\\partial f}{\\partial u} \\frac{\\partial g}{\\partial v} - \\frac{\\partial f}{\\partial v} \\frac{\\partial g}{\\partial u} \\neq 0$",
     "correctAnswer": "E",
@@ -700,8 +700,8 @@
   },
   {
     "id": 50,
-    "category": "Mathematics",
-    "difficulty": "Hard",
+    "category": "Calculus",
+    "difficulty": "Easy",
     "problem": "$\\int_0^1 \\int_0^1 e^{x+y} dy dx =$\n\n(A) $e^2 - 2e + 1$\n\n(B) $e - 1$\n\n(C) $(e - 1)^2$\n\n(D) $e^2 - 1$\n\n(E) $2(e - 1)$",
     "correctAnswer": "E",
     "choices": [
@@ -728,7 +728,7 @@
   },
   {
     "id": 52,
-    "category": "Abstract Algebra",
+    "category": "Algebra",
     "difficulty": "Hard",
     "problem": "Let $G$ be the group of permutations of 5 objects. What is the total number of conjugacy classes of elements of $G$?\n\n(A) $1$\n\n(B) $2$\n\n(C) $3$\n\n(D) $4$\n\n(E) $5$",
     "correctAnswer": "E",
@@ -742,7 +742,7 @@
   },
   {
     "id": 53,
-    "category": "Linear Algebra",
+    "category": "Algebra",
     "difficulty": "Hard",
     "problem": "Let $v_1$, $v_2$, $v_3$, and $v_4$ be vectors in $\\mathbb{R}^2$, and consider the following six dot products:\n$v_1 \\cdot v_2$, $v_1 \\cdot v_3$, $v_1 \\cdot v_4$, $v_2 \\cdot v_3$, $v_2 \\cdot v_4$, $v_3 \\cdot v_4$\n\nWhich of the following statements about the six dot products could be true?\n\nI. All six are negative.\nII. Two are negative, and four are equal to 0.\nIII. Two are positive, and four are equal to 0.\n\n(A) II only\n\n(B) I and II only\n\n(C) I and III only\n\n(D) II and III only\n\n(E) I, II, and III",
     "correctAnswer": "D",
@@ -784,7 +784,7 @@
   },
   {
     "id": 56,
-    "category": "Abstract Algebra",
+    "category": "Algebra",
     "difficulty": "Hard",
     "problem": "Let $R$ be a ring with identity such that $a^2 = a$ for all $a \\in R$. Which of the following statements must be true?\n\nI. $a + a = 0$ for all $a \\in R$.\nII. If $b \\in R$, then $b^n = 0$ for some positive integer $n$.\nIII. $ab = ba$ for all $a, b \\in R$.\n\n(A) None\n\n(B) I only\n\n(C) II only\n\n(D) I and II\n\n(E) I and III",
     "correctAnswer": "E",
@@ -798,7 +798,7 @@
   },
   {
     "id": 57,
-    "category": "Number Theory",
+    "category": "Discrete Math",
     "difficulty": "Hard",
     "problem": "For each integer $n \\geq 0$, define the function $I_n$ by $I_n(x) = \\int_1^x (\\log t)^n dt$ for all $x > 1$. Which of the following must be true for each $n \\geq 1$ and for all $x > 1$?\n\n(A) $I_n(x) = I_{n-1}(x) + I_{n-2}(x)$\n\n(B) $I_n(x) = x(\\log x)^n - nI_{n-1}(x)$\n\n(C) $I_n(x) = x(\\log x)^n + nI_{n-1}(x)$\n\n(D) $I_n(x) = \\frac{1}{x}(\\log x)^n - nI_{n-1}(x)$\n\n(E) $I_n(x) = \\frac{1}{x}(\\log x)^n + nI_{n-1}(x)$",
     "correctAnswer": "B",
@@ -826,7 +826,7 @@
   },
   {
     "id": 59,
-    "category": "Abstract Algebra",
+    "category": "Algebra",
     "difficulty": "Hard",
     "problem": "Let $\\mathbb{Z}_{30}$ be the ring of integers modulo 30, and let $U_{30}$ be the group of all invertible elements in $\\mathbb{Z}_{30}$ under multiplication. Let $f$ be a group homomorphism from $U_{30}$ to $U_{30}$ with $\\ker(f) = \\{1, 11\\}$. If $f(7) = 7$, which of the following elements does $f$ also map to 7?\n\n(A) $11$\n\n(B) $13$\n\n(C) $17$\n\n(D) $19$\n\n(E) $29$",
     "correctAnswer": "C",
@@ -840,7 +840,7 @@
   },
   {
     "id": 60,
-    "category": "Linear Algebra",
+    "category": "Algebra",
     "difficulty": "Hard",
     "problem": "A matrix $M$ can be factored as $M = LU$, where\n$L = \\begin{pmatrix} 1 & 0 & 0 & 0 \\\\ 1 & 1 & 0 & 0 \\\\ 1 & 0 & 1 & 0 \\\\ 1 & -1 & 0 & 1 \\end{pmatrix}$ and $U = \\begin{pmatrix} 1 & 0 & 1 & 1 \\\\ 0 & 1 & 1 & 0 \\\\ 0 & 0 & 1 & 2 \\\\ 0 & 0 & 0 & 2 \\end{pmatrix}$.\n\nIf $b = \\begin{pmatrix} 1 \\\\ 1 \\\\ 1 \\\\ 0 \\end{pmatrix}$ and $x$ is the solution of the system $Mx = b$, what is the first coordinate of the vector $x$?\n\n(A) $-2$\n\n(B) $-1$\n\n(C) $0$\n\n(D) $1$\n\n(E) $2$",
     "correctAnswer": "B",
@@ -882,8 +882,8 @@
   },
   {
     "id": 63,
-    "category": "Mathematics",
-    "difficulty": "Hard",
+    "category": "Calculus",
+    "difficulty": "Easy",
     "problem": "$\\int_0^1 \\sin \\pi x \\, dx =$\n\n(A) $0$\n\n(B) $\\frac{1}{\\pi}$\n\n(C) $\\frac{2}{\\pi}$\n\n(D) $1$\n\n(E) $\\pi$",
     "correctAnswer": "A",
     "choices": [
@@ -896,7 +896,7 @@
   },
   {
     "id": 64,
-    "category": "Mathematics",
+    "category": "Calculus",
     "difficulty": "Hard",
     "problem": "For each of the following metrics $d$, consider the metric space $(\\mathbb{R}, d)$. For which of the metrics is $(\\mathbb{R}, d)$ NOT a complete metric space?\n\n(A) $d(x, y) = |x - y|$\n\n(B) $d(x, y) = |\\arctan x - \\arctan y|$\n\n(C) $d(x, y) = \\left|\\frac{x}{1+|x|} - \\frac{y}{1+|y|}\\right|$\n\n(D) $d(x, y) = |3x - 3y|$\n\n(E) $d(x, y) = \\begin{cases} 0 & \\text{if } x = y \\\\ 1 & \\text{if } x \\neq y \\end{cases}$",
     "correctAnswer": "C",
@@ -911,7 +911,7 @@
   {
     "id": 65,
     "category": "Probability",
-    "difficulty": "Hard",
+    "difficulty": "Easy",
     "problem": "$\\int_0^1 \\sin \\pi x \\, dx =$\n\n(A) $0$\n\n(B) $\\frac{1}{\\pi}$\n\n(C) $\\frac{2}{\\pi}$\n\n(D) $1$\n\n(E) $\\pi$",
     "correctAnswer": "E",
     "choices": [
@@ -924,7 +924,7 @@
   },
   {
     "id": 66,
-    "category": "Abstract Algebra",
+    "category": "Algebra",
     "difficulty": "Hard",
     "problem": "Let $X = \\{n \\in \\mathbb{N} : n \\geq 1\\}$ be the topological space with its topology generated by the sets of the form\n\n$$U_k = \\{n \\in X: n \\text{ divides } k\\}$$\n\nfor $k \\geq 1$, so that the open sets in $X$ are the empty set and arbitrary unions of the sets $U_k$.\n\nFor any $n \\in X$, the closure of $\\{n\\}$ in $X$ is\n\n(A) $\\{n\\}$\n\n(B) $\\{sn: s \\text{ is a positive integer}\\}$\n\n(C) $\\{t \\in X: t \\text{ divides } n\\}$\n\n(D) $\\{p: p \\text{ is a prime divisor of } n\\}$\n\n(E) $\\left\\{\\prod_{i=1}^{m} p_i : \\{p_1, p_2, p_3, \\ldots, p_m\\} \\text{ is any set of } m \\text{ distinct prime divisors of } n\\right\\}$",
     "correctAnswer": "B",
